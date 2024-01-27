@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+  <html lang="es">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <title>ANDREA RIOS | Masoterapia + Estética </title>
+      <meta 
+        name="description" 
+        content="Andrea Rios | Masoterapia + Estética  | Más de 20 años de experiencia dedicada a la salud y el bienestar."/>
+
+      <!-- Cdn de BootStrap -->
+      <link  
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"/>
+
+      <link rel="stylesheet"
+       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"/>
+      
+      <!-- Google Fonts | Raleway -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,700;1,200;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+      <!-- Link Swiper's CSS -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+   
+      <!-- FONTAWESOME  -->
+      <script  
+        src="https://kit.fontawesome.com/0591dd6427.js"
+        crossorigin="anonymous"></script>
+    
+      <!-- Stylesheet propia almacenada en Visual Studio -->    
+      <link rel="stylesheet" href="/stylesheets/style.css">
+
+    </head>
+
+    <!--Aclaraciones de comandos de Bootstrap. En bootstrap colocamos las clases:
+    - "fixed-top" para que la barra de navegación quede FIJA.
+    - "navbar-dark" y "bg-dark" para darle un color oscuro al backgroung de la barra de navegación. 
+    - "container-fluid" Todo el contenido va dentro CONTAINER con la clse fluid, que abarque todo
+      el ancho del viewport y se modifique acorde a cada dispositivo y su resolución de pantalla.
+    - "text-center" para que el contenido esté centrado respecto a viewport.
+    - "col-lg-3" Es la cantidad de columnas en el tamaño lg de la grilla de bootstrap. 
+      Acá tendremos un elemento de 3 columnas de las 12 que hay diaponibles.
+    - "offset-lg-2" La columna estará desplazada 2 columnas hacia la derecha
+    - "align-items-center" alinea en el eje vertical los hijos del elemento de forma centrada.
+    -  "py-3" La propiedad "p" para la clase "padding". La propiedad "y" setea los lados (top y bottom). 
+      Y el tamaño (size) va de 0 a 5 más "auto". Acá definimos un padding en top y bottom de 3.
+    - "data-bs-toggle" le indica a Bootstrap que deberá abrir un modal (ventana emergente)
+    - "data-bs-target" define el elemento que contiene al modal. --> 
+
+    <body>
+      <!-- INICIO NAVBAR -->
+      <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/"><img src="/images/logo-andrea-rios.png"
+             alt="AndreaRios Masoterapia + Estética"></a>
+    
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" 
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <!-- En la ul class de abajo: para colocar en el margen derecho los botones del navbar, 
+          damos un espacio en el margen-start(ms), desde el tamaño de la "media query large"(lg)-->
+        
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-lg-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">Estética Facial</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/bbglow.html">BB Glow</a></li>
+                  <li><a class="dropdown-item" href="/dermaplaning.html">Dermaplaning</a></li>
+                  <li><a class="dropdown-item" href="/limpiezaFacial.html">Limpieza facial</a></li>
+                  <li><a class="dropdown-item" href="/nanobotox.html">NanoBotox</a></li>
+                  <li><a class="dropdown-item" href="/peeling.html">Peeling</a></li>
+                  <li><a class="dropdown-item" href="/radiofrecuenciaFacial.html">Radiofrecuencia</a></li>
+                  <li><a class="dropdown-item" href="/terapiaLed.html">Terapia Led</a></li>
+                  <li><a class="dropdown-item" href="/tratamientoAntiaging.html">Tratamiento antiaging</a></li>
+                </ul>
+              </li>            
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" 
+                data-bs-toggle="dropdown" aria-expanded="false">Estética Corporal</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/tattooRemoval.html">Tattoo Removal</a></li>
+                  <li><a class="dropdown-item" href="/ultracavitacion.html">Ultracavitación</a></li>
+                  <li><a class="dropdown-item" href="/depilacionDefinitiva.html">Depilación Defintiva</a></li>
+                  <li><a class="dropdown-item" href="/lipolaserNoInvasivo.html">Lipolaser NO invasivo</a></li>
+                  <li><a class="dropdown-item" href="/radiofrecuenciaCorporal.html">Radiofrecuencia corporal</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" 
+                data-bs-toggle="dropdown" aria-expanded="false">Masoterapia</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/reflexologia.html">Reflexología</a></li>
+                  <li><a class="dropdown-item" href="/masajeAntiEstres.html">Masajes Antiestrés</a></li>
+                  <li><a class="dropdown-item" href="/drenajeLinfatico.html">Drenajes Linfáticos</a></li>
+                  <li><a class="dropdown-item" href="/masajeTerapeutico.html">Masajes Terapéuticos</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" 
+                data-bs-toggle="dropdown" aria-expanded="false">Terapias</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/reiki.html">Reiki</a></li>
+                  <li><a class="dropdown-item" href="/cupping.html">Cupping</a></li>
+                </ul>
+              </li>            
+              <li class="nav-item"><a class="nav-link" href="/sobreAndrea.html">Sobre Andrea</a></li>
+              <li class="nav-item"><a class="nav-link" href="/contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+      <!-- INICIO MAIN LIPOLASER NO INVASIVO -->
+      <main class="pt-0 bg-gradient-gray-white">
+
+        <!-- INICIO LIPOLASER HERO -->
+        <section id="" class="scroll_section">
+          <div class="container-fluid" id="ultracavitacion-hero-image">
+            <div class="row align-items-center lipolaser-hero2">
+              <div class="col-lg-4 offset-lg-3">
+                <h4>LIPOLASER 
+                <br>NO INVASIVO</h4>
+                <br>
+                <p> REDUCE adiposidad, ESCULPE el cuerpo y
+                <br> ELIMINA celulitis. 
+                </p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- FIN LIPOLASER HERO --> 
+      
+        <!-- INICIO TERAPIA LED INFO-TEXTO 1-->
+        <div class="container mb-0 pt-1">
+          <section id="terapiaLed-info" class="row">
+      
+            <!-- 1 columna que ocupará 12 lugares.-->
+          <article class="col-12 col-lg-8 offset-lg-2">
+            <h5 class="text-center">¿Querés eliminar flacidez y celulitis corporal?</h5>
+            <br>
+            <p class="align-items-center">El LipoLáser NO invasivo es  el procedimiento de moldeamiento corporal más sano para el cuerpo. Estimula la liberación natural de los excesos de grasa sin destruir ni alterar estructuralmente el tejido adiposo o los tejidos adyacentes. 
+            <br>
+            <br>El lipolaser NO invasivo, ha <strong>revolucionado el mundo de la estética</strong> por su eficacia. Este método ofrece una reducción de grasa localizada, la celulitis y permite esculpir el cuerpo SIN ningún dolor ni efecto secundario.</p>
+          </article>
+            
+          </section>
+        </div>
+        <br>
+        <!-- FIN TERAPIA LED INFO-TEXTO 1-->
+
+        <!-- INICIO CARD LIPOLASER -->
+        <article id="card-lipolaser">
+          <section class="swiperlipolaser mySwiper">
+            <div class="containerr swiper">
+              <h5 class="text-center">ZONAS FRECUENTES DE APLICACIÓN</h5>
+              <br>
+              <div class="slide-container">
+                <div class="cardss-wrapper swiper-wrapper">
+      
+                  <div class="cardss swiper-slide">
+                    <div class="image-box">
+                      <img src="images/liposaler-no-invasivo-0.png" alt="lipolaser-no-invasivo-0"/>
+                    </div>
+                    <div class="profile-details">
+                      <div class="name-job">
+                        <h5 class="name">LIPOLASER NO INVASIVO</h5>
+                        <h5 class="job">Cintura posterior</h5>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="cardss swiper-slide">
+                    <div class="image-box">
+                      <img src="images/liposaler-no-invasivo-1.png" alt="lipolaser-no-invasivo-1"/>
+                    </div>
+                    <div class="profile-details">
+                      <div class="name-job">
+                        <h5 class="name">LIPOLASER NO INVASIVO</h5>
+                        <h5 class="job">Zona interior de brazos</h5>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="cardss swiper-slide">
+                    <div class="image-box">
+                      <img src="images/liposaler-no-invasivo-2.png" alt="lipolaser-no-invasivo-2"/>
+                    </div>
+                    <div class="profile-details">
+                      <div class="name-job">
+                        <h5 class="name">LIPOLASER NO INVASIVO</h5>
+                        <h5 class="job">Cintura central</h5>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="cardss swiper-slide">
+                    <div class="image-box">
+                      <img src="images/liposaler-no-invasivo-3.png" alt="lipolaser-no-invasivo-3"/>
+                    </div>
+                    <div class="profile-details">
+                      <div class="name-job">
+                        <h5 class="name">LIPOLASER NO INVASIVO</h5>
+                        <h5 class="job">Cintura lateral</h5>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="cardss swiper-slide">
+                    <div class="image-box">
+                      <img src="images/liposaler-no-invasivo-4.png" alt="lipolaser-no-invasivo-4"/>
+                    </div>
+                    <div class="profile-details">
+                      <div class="name-job">
+                        <h5 class="name">LIPOLASER NO INVASIVO</h5>
+                        <h5 class="job">Espalda media</h5>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="cardss swiper-slide">
+                    <div class="image-box">
+                      <img src="images/liposaler-no-invasivo-5.png" alt="lipolaser-no-invasivo-5"/>
+                    </div>
+                    <div class="profile-details">
+                      <div class="name-job">
+                        <h5 class="name">LIPOLASER NO INVASIVO</h5>
+                        <h5 class="job">Zona externa de muslos</h5>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="cardss swiper-slide">
+                    <div class="image-box">
+                      <img src="images/liposaler-no-invasivo-6.png" alt="lipolaser-no-invasivo-6"/>
+                    </div>
+                    <div class="profile-details">
+                      <div class="name-job">
+                        <h5 class="name">LIPOLASER NO INVASIVO</h5>
+                        <h5 class="job">Pectorales</h5>
+                      </div>
+                    </div>
+                  </div>
+      
+                   <div class="cardss swiper-slide">
+                    <div class="image-box">
+                      <img src="images/liposaler-no-invasivo-7.png" alt="lipolaser-no-invasivo-7"/>
+                    </div>
+                    <div class="profile-details">
+                      <div class="name-job">
+                        <h5 class="name">LIPOLASER NO INVASIVO</h5>
+                        <h5 class="job">Zona posterior de muslos</h5>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="cardss swiper-slide">
+                    <div class="image-box">
+                      <img src="images/liposaler-no-invasivo-8.png" alt="lipolaser-no-invasivo-8"/>
+                    </div>
+                    <div class="profile-details">
+                      <div class="name-job">
+                        <h5 class="name">LIPOLASER NO INVASIVO</h5>
+                        <h5 class="job">Pantalón de montar</h5>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="cardss swiper-slide">
+                    <div class="image-box">
+                      <img src="images/liposaler-no-invasivo-9.png" alt="lipolaser-no-invasivo-9"/>
+                    </div>
+                    <div class="profile-details">
+                      <div class="name-job">
+                        <h5 class="name">LIPOLASER NO INVASIVO</h5>
+                        <h5 class="job">Zona de rodillas</h5>
+                      </div>
+                    </div>
+                  </div>
+      
+                </div>
+              </div>
+              <div class="swiper-button-next swiper-navBtn"></div>
+              <div class="swiper-button-prev swiper-navBtn"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </section>
+        </article>
+        <!-- FIN CARD LIPOLASER -->
+
+        <!-- INICIO TERAPIA LED INFO-TEXTO 2-->
+        <div class="container mb-0 pt-1">
+          <section id="terapiaLed-info" class="row">
+            
+            <!-- 1 Col ocupará 6 lugares del lado derecho -->
+            <article class="col-12 col-lg-6 order-lg-1 mt-4">
+              <br>
+              <h5>TIEMPO DE TRATAMIENTO</h5>
+              <p> Por lo general, un tratamiento dura 9 sesiones. La frecuencia de cada sesión es de 2 o 3 veces por semana.
+              <br>
+              <br> Acorde a la cantidad de adiposidad localizada, la zona a tratar y los objetivos del paciente, se pueden requerir 1 o más tratamientos de 9 sesiones cada uno.
+              <br>
+              <br>Luego se aconseja un mantenimiento mensual para que los beneficios perduren.
+              </p>
+            </article>
+      
+            <!--Esta columna ocupará 6 lugares -->
+            <article class="col-12 col-lg-6 mt-4">
+              <br>
+               <h5>VENTAJAS</h5>
+              <P>Trabaja hasta 4 zonas del cuerpo al mismo tiempo, porque la tecnología del LIPOLASER posee 8 cabezales. Es un tratamiento NO INVASIVO, seguro, SIN dolor, SIN agujas, SIN succión, SIN frío y sin tiempo de inactividad.
+              <br><br>
+              <i class="bi bi-check-circle"> Elimina la adiposidad localizada de #ellas y #ellos.</i> <br>
+              <i class="bi bi-check-circle"> Esculpe de manera no invasiva el cuerpo.</i> <br>
+              <i class="bi bi-check-circle"> Reduce la celulitis.</i>
+              </P>
+            </article>
+      
+          </section>
+          <br>
+          <br>
+        </div>
+        <!-- FIN TERAPIA LED INFO-TEXTO 2-->
+      
+        <!-- Swiper JS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+      
+      
+        <!-- Initialize Swiper -->
+         <script>
+         var swiper = new Swiper(".slide-container", {
+        slidesPerView: 4,
+        spaceBetween: 20,
+        slidesPerGroup: 3,
+        loop: true,
+        centerSlide: "true",
+        grabCursor: "true",
+        fade: "true",
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          dinamicBullets: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+          520: {
+            slidesPerView: 2,
+          },
+          768: {
+            slidesPerView: 3,
+          },
+          1000: {
+            slidesPerView: 4
+          },
+        },
+      });
+        </script>
+      
+      </main>
+      <!-- FIN MAIN LIPOLASER NO INVASIVO -->
+
+      <footer class="bg-dark p-3">
+      <div class="container text-center ">
+        <nav class="d-flex justify-content-around">
+          <a href="https://www.facebook.com/AndreaRios.Masoterapeuta/" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook fs-3"></i></a> <!--f3 es font size tamaño 3.-->
+          <a href="https://www.instagram.com/andrearios.masoterapeuta/" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram fs-3"></i></a>
+          <a href="https://api.whatsapp.com/send?phone=543876664176" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp fs-3"></i></a> 
+        </nav>
+        <small class="text-white">&COPY; Copyright 2024  -  ANDREA RIOS MASOTERAPIA + ESTÉTICA  -  Rosario de la Frontera (Salta - Argentina)</small>
+      </div>
+      </footer>
+  
+      <!-- BOOTSTRAP JS -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"> 
+      </script>
+
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+      <!-- JS -->
+      <script src="js/main.js"></script>
+  
+    </body>
+  </html>

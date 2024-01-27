@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+  <html lang="es">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <title>ANDREA RIOS | Masoterapia + Estética </title>
+      <meta 
+        name="description" 
+        content="Andrea Rios | Masoterapia + Estética  | Más de 20 años de experiencia dedicada a la salud y el bienestar."/>
+
+      <!-- Cdn de BootStrap -->
+      <link  
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"/>
+
+      <link rel="stylesheet"
+       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"/>
+      
+      <!-- Google Fonts | Raleway -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,700;1,200;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+      <!-- Link Swiper's CSS -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+   
+      <!-- FONTAWESOME  -->
+      <script  
+        src="https://kit.fontawesome.com/0591dd6427.js"
+        crossorigin="anonymous"></script>
+    
+      <!-- Stylesheet propia almacenada en Visual Studio -->    
+      <link rel="stylesheet" href="/stylesheets/style.css">
+
+    </head>
+
+    <!--Aclaraciones de comandos de Bootstrap. En bootstrap colocamos las clases:
+    - "fixed-top" para que la barra de navegación quede FIJA.
+    - "navbar-dark" y "bg-dark" para darle un color oscuro al backgroung de la barra de navegación. 
+    - "container-fluid" Todo el contenido va dentro CONTAINER con la clse fluid, que abarque todo
+      el ancho del viewport y se modifique acorde a cada dispositivo y su resolución de pantalla.
+    - "text-center" para que el contenido esté centrado respecto a viewport.
+    - "col-lg-3" Es la cantidad de columnas en el tamaño lg de la grilla de bootstrap. 
+      Acá tendremos un elemento de 3 columnas de las 12 que hay diaponibles.
+    - "offset-lg-2" La columna estará desplazada 2 columnas hacia la derecha
+    - "align-items-center" alinea en el eje vertical los hijos del elemento de forma centrada.
+    -  "py-3" La propiedad "p" para la clase "padding". La propiedad "y" setea los lados (top y bottom). 
+      Y el tamaño (size) va de 0 a 5 más "auto". Acá definimos un padding en top y bottom de 3.
+    - "data-bs-toggle" le indica a Bootstrap que deberá abrir un modal (ventana emergente)
+    - "data-bs-target" define el elemento que contiene al modal. --> 
+
+    <body>
+      <!-- INICIO NAVBAR -->
+      <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/"><img src="/images/logo-andrea-rios.png"
+             alt="AndreaRios Masoterapia + Estética"></a>
+    
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" 
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <!-- En la ul class de abajo: para colocar en el margen derecho los botones del navbar, 
+          damos un espacio en el margen-start(ms), desde el tamaño de la "media query large"(lg)-->
+        
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-lg-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">Estética Facial</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/bbglow.html">BB Glow</a></li>
+                  <li><a class="dropdown-item" href="/dermaplaning.html">Dermaplaning</a></li>
+                  <li><a class="dropdown-item" href="/limpiezaFacial.html">Limpieza facial</a></li>
+                  <li><a class="dropdown-item" href="/nanobotox.html">NanoBotox</a></li>
+                  <li><a class="dropdown-item" href="/peeling.html">Peeling</a></li>
+                  <li><a class="dropdown-item" href="/radiofrecuenciaFacial.html">Radiofrecuencia</a></li>
+                  <li><a class="dropdown-item" href="/terapiaLed.html">Terapia Led</a></li>
+                  <li><a class="dropdown-item" href="/tratamientoAntiaging.html">Tratamiento antiaging</a></li>
+                </ul>
+              </li>            
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" 
+                data-bs-toggle="dropdown" aria-expanded="false">Estética Corporal</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/tattooRemoval.html">Tattoo Removal</a></li>
+                  <li><a class="dropdown-item" href="/ultracavitacion.html">Ultracavitación</a></li>
+                  <li><a class="dropdown-item" href="/depilacionDefinitiva.html">Depilación Defintiva</a></li>
+                  <li><a class="dropdown-item" href="/lipolaserNoInvasivo.html">Lipolaser NO invasivo</a></li>
+                  <li><a class="dropdown-item" href="/radiofrecuenciaCorporal.html">Radiofrecuencia corporal</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" 
+                data-bs-toggle="dropdown" aria-expanded="false">Masoterapia</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/reflexologia.html">Reflexología</a></li>
+                  <li><a class="dropdown-item" href="/masajeAntiEstres.html">Masajes Antiestrés</a></li>
+                  <li><a class="dropdown-item" href="/drenajeLinfatico.html">Drenajes Linfáticos</a></li>
+                  <li><a class="dropdown-item" href="/masajeTerapeutico.html">Masajes Terapéuticos</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" 
+                data-bs-toggle="dropdown" aria-expanded="false">Terapias</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/reiki.html">Reiki</a></li>
+                  <li><a class="dropdown-item" href="/cupping.html">Cupping</a></li>
+                </ul>
+              </li>            
+              <li class="nav-item"><a class="nav-link" href="/sobreAndrea.html">Sobre Andrea</a></li>
+              <li class="nav-item"><a class="nav-link" href="/contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+      <!-- INICIO MAIN TERAPIA LED -->
+      <main class="pt-0 bg-gradient-gray-white">
+
+        <!-- INICIO TERAPIA LED CAROUSEL-->
+        <section id="terapia-led-carousel" class="scroll_section">
+      
+          <div id="carouselTerapiaLed" class="carousel slide">
+      
+            <div class="carousel-indicators">
+              <button  type="button" data-bs-target="#carouselTerapiaLed" data-bs-slide-to="0" 
+                       class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button
+                type="button" data-bs-target="#carouselTerapiaLed" data-bs-slide-to="1" aria-label="Slide 2">
+              </button>
+              <button
+                type="button" data-bs-target="#carouselTerapiaLed" data-bs-slide-to="2" aria-label="Slide 3">
+              </button>
+            </div>
+      
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/images/terapia-led-hero-andrea-rios.png"
+                  class="d-block w-100" alt="terapia-led-andrea-rios-1"/>
+              </div>
+              <div class="carousel-item">
+                <img src="/images/terapia-led-hero-andrea-rios-2.png"
+                  class="d-block w-100" alt="terapia-led-andrea-rios-2"/>
+              </div>
+                <div class="carousel-item">
+                <img src="/images/terapia-led-hero-andrea-rios-3.png"
+                  class="d-block w-100" alt="terapia-led-andrea-rios-3"/>
+              </div>
+            </div>
+      
+            <button class="carousel-control-prev" type="button"
+              data-bs-target="#carouselTerapiaLed" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+      
+            <button class="carousel-control-next" type="button"
+              data-bs-target="#carouselTerapiaLed" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+      
+          </div>
+        
+        </section>
+        <!-- FIN TERAPIA LED CAROUSEL -->
+      
+        <!-- INICIO TERAPIA LED BANNER FIJO-->
+        <section id="terapiaLedFijo" class="terapiaLedFijo">
+          <div class="container">
+            <!-- 1 columna que ocupará 12 lugares.-->
+            <article class="col-12 col-lg-8 offset-lg-2 mt-5 mb-1">
+                <h4>TERAPIA LED FACIAL</h4>
+                <p>
+                  La tecnología con MÁSCARA de LUZ LED tiene una acción directa sobre
+                  el cuidado de la piel con efectos que se notan desde la primer
+                  sesión. </p>
+                  <p> Acorde al diagnóstico facial, se aplicará un color u otro con
+                  diferentes beneficios. Es una tratamiento relajante, indoloro y no
+                  invasivo.
+                </p>
+                <br/>
+            </article>
+      
+            <div class="img-terapia-led">
+              <div class="row">
+                <img class="img-fluid" src="/images/terapia-led-fijo-andrea-rios-1.png"
+                width="100%" alt="persona recostada con máscara de terapia led"/>
+              </div>
+      
+              <div class="row">
+                <img class="img-fluid" src="/images/terapia-led-fijo-andrea-rios-2.png"
+                width="100%" alt="persona recostada con máscara de terapia led"/>
+              </div>
+      
+              <div class="row">
+                <img class="img-fluid" src="/images/terapia-led-fijo-andrea-rios-3.png"
+                width="100%" alt="persona recostada con máscara de terapia led"/>
+              </div>
+      
+            </div>
+          </div>
+        </section>
+        <!-- FIN TERAPIA LED BANNER FIJO -->
+       
+        <!-- INICIO TERAPIA LED INFO-TEXTO -->
+        <div class="container mb-1 pt-4">
+          <section id="terapiaLed-info" class="row pt-2 pb-2">
+      
+            <!-- 1 Col ocupará 6 lugares del lado derecho -->
+            <article class="col-12 col-lg-6 order-lg-1 mt-4">
+              <h5>TIEMPO DE TRATAMIENTO</h5>
+              <p> Según el biotipo cutáneo y la patología, se implementa un tratamiento de 8 a 12 sesiones aprox. La frecuencia oscila entre 2 o 3 veces por semana. Luego se aconseja un mantenimiento mensual para que los beneficios perduren.</p>
+            </article>
+      
+            <!--Esta columna ocupará 6 lugares -->
+            <article class="col-12 col-lg-6 mt-4">
+               <h5>VENTAJAS</h5>
+              <P> Disminuye la aparición de granos con base bacteriana y seborreica. Reduce las marcas de acné, la inflamación y congesión de la piel derivadas del acné.  Trata las lesiones producidas por foliculitis. Además cierra los poros dilatados.</P>
+            </article>
+      
+          </section>
+        </div>
+        <!-- FIN TERAPIA LED INFO-TEXTO -->
+      
+        <!-- INICIO TERAPIA LED CON HERO IMAGE -->
+        <section id="dermapen-fijo" class="scroll_section">
+          <div class="container-fluid"> 
+            <div class="row terapia-led-fijo align-items-center">
+              <article class="col-12 col-lg-8 offset-lg-2">
+                <p>BENEFICIOS DE LA TERAPIA LED:</p>
+                  <i class="bi bi-check-circle"> Rejuvenecimiento cutáneo. </i><br>
+                  <i class="bi bi-check-circle"> Repara manchas (sol y edad).</i><br>
+                  <i class="bi bi-check-circle"> Suaviza arrugas.</i><br>
+                  <i class="bi bi-check-circle"> Disimula líneas de expresión.</i><br>
+                  <i class="bi bi-check-circle"> Elimina la pigmentación. </i><br>
+                  <i class="bi bi-check-circle"> Activa los Fibroblastos.</i><br>
+                <br>
+                <br>
+                <div class="col text-start">
+                  <a class="btn btn-primary btn-lg rounded-5" href="/contacto.html">AGENDÁ TU SESIÓN HOY!</a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+        <!-- FIN TERAPIA LED CON HERO IMAGE -->
+      
+      </main>
+      <!-- FIN MAIN TERAPIA LED -->
+
+      <footer class="bg-dark p-3">
+      <div class="container text-center ">
+        <nav class="d-flex justify-content-around">
+          <a href="https://www.facebook.com/AndreaRios.Masoterapeuta/" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook fs-3"></i></a> <!--f3 es font size tamaño 3.-->
+          <a href="https://www.instagram.com/andrearios.masoterapeuta/" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram fs-3"></i></a>
+          <a href="https://api.whatsapp.com/send?phone=543876664176" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp fs-3"></i></a> 
+        </nav>
+        <small class="text-white">&COPY; Copyright 2024  -  ANDREA RIOS MASOTERAPIA + ESTÉTICA  -  Rosario de la Frontera (Salta - Argentina)</small>
+      </div>
+      </footer>
+  
+      <!-- BOOTSTRAP JS -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"> 
+      </script>
+
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+      <!-- JS -->
+      <script src="js/main.js"></script>
+  
+    </body>
+  </html>

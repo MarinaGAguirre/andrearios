@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+  <html lang="es">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <title>ANDREA RIOS | Masoterapia + Estética </title>
+      <meta 
+        name="description" 
+        content="Andrea Rios | Masoterapia + Estética  | Más de 20 años de experiencia dedicada a la salud y el bienestar."/>
+
+      <!-- Cdn de BootStrap -->
+      <link  
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"/>
+
+      <link rel="stylesheet"
+       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"/>
+      
+      <!-- Google Fonts | Raleway -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,700;1,200;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+      <!-- Link Swiper's CSS -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+   
+      <!-- FONTAWESOME  -->
+      <script  
+        src="https://kit.fontawesome.com/0591dd6427.js"
+        crossorigin="anonymous"></script>
+    
+      <!-- Stylesheet propia almacenada en Visual Studio -->    
+      <link rel="stylesheet" href="/stylesheets/style.css">
+
+    </head>
+
+    <!--Aclaraciones de comandos de Bootstrap. En bootstrap colocamos las clases:
+    - "fixed-top" para que la barra de navegación quede FIJA.
+    - "navbar-dark" y "bg-dark" para darle un color oscuro al backgroung de la barra de navegación. 
+    - "container-fluid" Todo el contenido va dentro CONTAINER con la clse fluid, que abarque todo
+      el ancho del viewport y se modifique acorde a cada dispositivo y su resolución de pantalla.
+    - "text-center" para que el contenido esté centrado respecto a viewport.
+    - "col-lg-3" Es la cantidad de columnas en el tamaño lg de la grilla de bootstrap. 
+      Acá tendremos un elemento de 3 columnas de las 12 que hay diaponibles.
+    - "offset-lg-2" La columna estará desplazada 2 columnas hacia la derecha
+    - "align-items-center" alinea en el eje vertical los hijos del elemento de forma centrada.
+    -  "py-3" La propiedad "p" para la clase "padding". La propiedad "y" setea los lados (top y bottom). 
+      Y el tamaño (size) va de 0 a 5 más "auto". Acá definimos un padding en top y bottom de 3.
+    - "data-bs-toggle" le indica a Bootstrap que deberá abrir un modal (ventana emergente)
+    - "data-bs-target" define el elemento que contiene al modal. --> 
+
+    <body>
+      <!-- INICIO NAVBAR -->
+      <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/"><img src="/images/logo-andrea-rios.png"
+             alt="AndreaRios Masoterapia + Estética"></a>
+    
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" 
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <!-- En la ul class de abajo: para colocar en el margen derecho los botones del navbar, 
+          damos un espacio en el margen-start(ms), desde el tamaño de la "media query large"(lg)-->
+        
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-lg-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">Estética Facial</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/bbglow.html">BB Glow</a></li>
+                  <li><a class="dropdown-item" href="/dermaplaning.html">Dermaplaning</a></li>
+                  <li><a class="dropdown-item" href="/limpiezaFacial.html">Limpieza facial</a></li>
+                  <li><a class="dropdown-item" href="/nanobotox.html">NanoBotox</a></li>
+                  <li><a class="dropdown-item" href="/peeling.html">Peeling</a></li>
+                  <li><a class="dropdown-item" href="/radiofrecuenciaFacial.html">Radiofrecuencia</a></li>
+                  <li><a class="dropdown-item" href="/terapiaLed.html">Terapia Led</a></li>
+                  <li><a class="dropdown-item" href="/tratamientoAntiaging.html">Tratamiento antiaging</a></li>
+                </ul>
+              </li>            
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" 
+                data-bs-toggle="dropdown" aria-expanded="false">Estética Corporal</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/tattooRemoval.html">Tattoo Removal</a></li>
+                  <li><a class="dropdown-item" href="/ultracavitacion.html">Ultracavitación</a></li>
+                  <li><a class="dropdown-item" href="/depilacionDefinitiva.html">Depilación Defintiva</a></li>
+                  <li><a class="dropdown-item" href="/lipolaserNoInvasivo.html">Lipolaser NO invasivo</a></li>
+                  <li><a class="dropdown-item" href="/radiofrecuenciaCorporal.html">Radiofrecuencia corporal</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" 
+                data-bs-toggle="dropdown" aria-expanded="false">Masoterapia</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/reflexologia.html">Reflexología</a></li>
+                  <li><a class="dropdown-item" href="/masajeAntiEstres.html">Masajes Antiestrés</a></li>
+                  <li><a class="dropdown-item" href="/drenajeLinfatico.html">Drenajes Linfáticos</a></li>
+                  <li><a class="dropdown-item" href="/masajeTerapeutico.html">Masajes Terapéuticos</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" 
+                data-bs-toggle="dropdown" aria-expanded="false">Terapias</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/reiki.html">Reiki</a></li>
+                  <li><a class="dropdown-item" href="/cupping.html">Cupping</a></li>
+                </ul>
+              </li>            
+              <li class="nav-item"><a class="nav-link" href="/sobreAndrea.html">Sobre Andrea</a></li>
+              <li class="nav-item"><a class="nav-link" href="/contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+      <!-- INICIO MAIN DRENAJE LINFÁTICO -->
+      <main class="pt-0 ">
+        <!-- INICIO HERO DRENAJE LINFÁTICO -->
+        <section id="drenaje-linfático-hero" class="scroll_section">
+          <div class="container-fluid" id="drenaje-linfático-hero-image">
+            <div class="row align-items-start drenaje-linfático-hero">
+              <div class="col-lg-4 offset-lg-3">
+                <br>
+                <br>
+                <br>
+                <h4>DRENAJE LINFÁTICO
+                <br>MANUAL</h4>                
+                <p> Facilitan la circulación linfática.
+                  <br>Ideales para post-operatorios,
+                  <br>patologías de estreñimiento,
+                  <br>acné, piernas cansadas, etc.
+                </p>
+                <div class="text-start">
+                  <a class="btn btn-primary btn-lg rounded-5" href="/contacto.html">AGENDÁ TU SESIÓN HOY!</a>
+                  <br>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- FIN HERO DRENAJE LINFÁTICO -->
+      
+        <!-- INICIO TEXTO 1 DRENAJE LINFÁTICO -->
+        <section id="container-con-texto">
+          <div class="container mb-4 pt-4 row">
+            <!-- 1 Col ocupará 6 lugares del lado derecho -->
+            <article class="col-12 col-lg-10 offset-lg-2">
+              <h5 class="text-center">¿CÓMO TRABAJA EL DRENAJE LINFÁTICO MANUAL?</h5>
+              <p class="align-items-center"> El sistema linfático es la estructura anatómica que transporta la linfa. La linfa procede del líquido intersticial o intercelular. El drenaje linfático manual es la terapia que estimula el drenaje de estos conductos linfáticos, limpiando las zonas congestionadas. Los drenajes linfáticos pueden realizarse en:
+              <ul>
+                <li> Piernas</li>
+                <li> Pies</li>
+                <li> Abdomen</li>
+                <li> Cólon</li>
+                <li> Rostro</li>
+                <li> Cuerpo completo</li>
+              </ul>
+              </p>
+            </article>     
+
+          </div>  
+        </section>
+        <!-- FIN TEXTO 1 DRENAJE LINFÁTICO -->
+
+        <!-- INICIO DRENAJE LINFÁTICO BANNER CON CIRCULOS FIJO -->
+        <section id="drenajeLinfaticoCirculos" class="drenajeLinfaticoCirculos">
+          <div class="container">
+      
+            <div class="img-drenajeLinfaticoCirculos">
+              <div class="row">
+                <img class="img-fluid" src="/images/drenaje-linfatico-andrea-rios-circulos.png"
+                width="100%" alt="Tres imagenes del abdomen, las piernas y el pecho recibiendo masajes de drenaje linfático manual."/>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- FIN DRENAJE LINFÁTICO BANNER CON CIRCULOS FIJO -->
+
+        <!-- INICIO TEXTO 2 DRENAJE LINFÁTICO -->
+        <section id="container-con-texto">
+          <div class="container mb-1 pt-4 row">
+            
+            <article class="col-12 col-lg-10 offset-lg-2">
+              <p> Luego de cirugías -como una liposucción- se suele recomendar el drenaje linfático manual (DLM) para activar la circulación linfática, evitar los edemas y fibrosis.
+              </p>              
+            </article>
+
+            <!-- 1 Col ocupará 6 lugares del lado derecho -->
+            <article class="col-12 col-lg-8 order-lg-3 offset-lg-1 mt-1">
+              <p> 
+                <ul>
+                  <i class=""> <h5>BENEFICIOS DESTACADOS DEL DRENAJE LINFÁTICO MANUAL:</h5></i>
+                  <i class="bi bi-check-circle"> Posee efecto sedante en el sistema nervioso.</i><br>
+                  <i class="bi bi-check-circle"> Estimula la función renal.</i><br>
+                  <i class="bi bi-check-circle"> Mejora y protege el sistema inmunológico.</i><br>
+                  <i class="bi bi-check-circle"> Depura las toxinas del organismo.</i><br>      
+                </ul>
+              </p>
+            </article>
+          </div>  
+        </section>
+        <!-- FIN TEXTO 2 DRENAJE LINFÁTICO -->
+
+        <!-- INICIO TARJETAS DRENAJE LINFÁTICO -->
+        <section id="drenaje-linfatico-card">
+          <div class="container">
+            <div class="tarjetas-drenajelinfatico-list">
+      
+              <div>
+                <i class="fa-regular fa-calendar-days"></i>
+                  <h3 class="text-center">FRECUENCIA</h3>
+                <ul>
+                  <i class="bi bi-check-circle"> Entre 1 y 3 veces por semana. (*)</i><br />
+                  <i class="bi bi-check-circle"> Apto para todos las zonas del cuerpo.</i><br />
+                  <i class="bi bi-check-circle"> Puede realizarse durante todo el año.</i><br />
+                  <i class="bi bi-check-circle"> Apto para hombres y mujeres.</i><br />            
+                  <br>
+                  (*) Acorde al criterio profesional, prescripción médica y zona a tratar.<br />
+                </ul>
+              </div>
+      
+              <div>
+                <i class="fa-solid fa-list-check"></i>
+                <h3 class="text-center">INDICADO PARA</h3>
+                <ul>
+                  <i class="bi bi-check-circle"> Postoperatorios. Várices.</i><br>
+                  <i class="bi bi-check-circle"> Piernas cansadas o inflamadas.</i><br>
+                  <i class="bi bi-check-circle"> Ansiedad. Estrés. Acné. </i><br>
+                  <i class="bi bi-check-circle"> Celulitis. Linfedema. Edemas </i><br>
+                  <i class="bi bi-check-circle"> Dolor de cabeza. Migrañas. Vértigo.</i><br>
+                  <i class="bi bi-check-circle"> Artrosis. Artritis. Hematomas</i><br>
+                  <i class="bi bi-check-circle"> Afecciones del aparato digestivo.</i><br>
+                </ul>
+              </div>
+      
+              <div>
+                <i class="fa-solid fa-ban"></i>
+                <h3 class="text-center">CONTRAINDICACIONES 
+                <br> RELATIVAS O ABSOLUTAS  (*)</h3>
+                <ul>
+                  <i class="bi bi-check-circle"> Esclerosis del seno carotídeo.</i><br />
+                  <i class="bi bi-check-circle"> Asma grave. Hipotensión. Flebitis</i><br/>
+                  <i class="bi bi-check-circle"> Tumores malignos o cancer en curso.</i><br/>
+                  <i class="bi bi-check-circle"> Infecciones agudas. Tuberculosis.</i><br />
+                  <i class="bi bi-check-circle"> Insuficiencias cardiacas. Tromboflebitis</i><br />
+                  (*) Consulte siempre a su médico.
+                </ul>
+              </div>
+      
+            </div>
+          </div>
+        </section>
+        <!-- FIN TARJETAS DRENAJE LINFÁTICO -->
+      
+        <div class="col-12 col-lg-6 offset-lg-3 pt-3 pb-4">
+            <p><i> <strong>IMPORTANTE:</strong> Antes de someterse a un Drenaje Linfático, consulte a su médico de cabecera.</i></p>
+        </div>
+      
+      </main>
+      <!-- FIN MAIN DRENAJE LINFÁTICO -->
+
+      <footer class="bg-dark p-3">
+      <div class="container text-center ">
+        <nav class="d-flex justify-content-around">
+          <a href="https://www.facebook.com/AndreaRios.Masoterapeuta/" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook fs-3"></i></a> <!--f3 es font size tamaño 3.-->
+          <a href="https://www.instagram.com/andrearios.masoterapeuta/" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram fs-3"></i></a>
+          <a href="https://api.whatsapp.com/send?phone=543876664176" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp fs-3"></i></a> 
+        </nav>
+        <small class="text-white">&COPY; Copyright 2024  -  ANDREA RIOS MASOTERAPIA + ESTÉTICA  -  Rosario de la Frontera (Salta - Argentina)</small>
+      </div>
+      </footer>
+  
+      <!-- BOOTSTRAP JS -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"> 
+      </script>
+
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+      <!-- JS -->
+      <script src="js/main.js"></script>
+  
+    </body>
+  </html>

@@ -1,0 +1,2227 @@
+/*  **********  Custom Properties CSS  **********  */
+:root{
+  --first-color: rgb(236, 38, 143);
+  --first-alpha-color: rgb(236, 38, 143, 0.75);
+  --second-color: rgb(0, 0, 0) ;
+  --second-alpha-color: rgb(0, 0, 00, 0.75);
+  --third-color: rgb(143, 0, 255);
+  --third-alpha-color: rgb(143, 0, 255, 0.75);
+  --fourth-color: rgb(80, 4, 110);
+  --fourth-alpha-color: rgb(80, 4, 110, 0.75);
+
+  --link-color: rgb(255, 255, 255);
+  --link-alpha-color: rgb(143, 0, 255, 0.75);
+  --text-color: rgb(88, 88, 88);
+   
+  /* Colores de fondo*/
+  --bg-color: rgb(241, 237, 237);
+  --bg-alpha-color: rgb(241, 237, 237, 0.75);
+  --bg-color-2:  rgb(245, 245, 245);
+  --gb-alpha-color-2:  rgb(245, 245, 245, 0.75);
+
+   /* Otros colores*/
+  --yellow-color: rgb(240, 240, 106);
+  --dark-color: rgb(51, 49, 49);
+  --white-color: rgb(255,255,255);
+  --grayDark-color: rgb(128,128,128);
+  --grayDark-alpha-color: rgb(128,128,128, 0.75);
+  --grayLigth-color: rgb(219, 214, 214); 
+  --grayLigth-alpha-color: rgb(219, 214, 214 0.75); 
+}
+
+/*  **********  Reset Styles CSS **********  */
+/*  **********  ***** ****** *** **********  */
+
+a {
+ color: var(--link-color);
+ transition: all .3s ease-out;
+}
+
+a:hover {
+  color: var(--first-color);
+}
+
+body {
+  min-height: 100%;
+}
+
+body {
+  font-family: "Raleway", sans-serif; 
+  color:var(--text-color);
+  font-size: 14px;
+  min-height: 100%;
+ }
+
+html {
+  scroll-behavior: smooth;
+}
+
+.websites {
+ color: var(--grayLigth-color);
+}
+
+/*  ********** Bootstrap Styles **********  */
+/*  ********** ********* ****** **********  */
+
+.btn-primary {
+ background-color: var(--first-color);
+ border-color: var(--first-color);
+ --bs-btn-hover-bg: rgb(143, 0, 255);
+ --bs-btn-hover-border-color: rgb(143, 0, 255);
+ --bs-btn-hover-color: var(--white-color);
+ --bs-btn-active-bg: var(--second-color);
+ --bs-btn-active-border-color: var(--second-color);
+ --bs-btn-font-size: 0.75rem;
+ transition: background 0.5s, transform 0.5s ease-out;
+}
+
+.btn-primary:hover {
+  transform: translateY(-7px);
+}
+
+.btn-blanco {
+ background-color: var(--white-color);
+ border-color: var(--white-color);
+ --bs-btn-hover-bg: rgb(143, 0, 255);
+ --bs-btn-hover-border-color: rgb(143, 0, 255);
+ --bs-btn-hover-color: var(--white-color);
+ --bs-btn-color: var(--second-color);
+ --bs-btn-active-bg: var(--second-color);
+ --bs-btn-active-border-color: var(--second-color);
+ --bs-btn-font-size: 0.75rem;
+ transition: background 0.5s, transform 0.5s ease-out;
+}
+
+.btn-blanco:hover {
+  transform: translateY(-7px);
+}
+
+.btn-check {
+ background-color: var(--second-color);
+ border-color: var(--bs-btn-active-border-color);
+}
+
+.bg-dark {
+  background-color: var(--fourth-color) !important;
+}
+
+.bg--second-color {
+  background-color: none;
+}
+
+.carousel-control-prev-icon {background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23d90a84'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e")
+}
+
+.carousel-control-next-icon {background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23d90a84'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e")
+}
+
+.dropdown-item {
+ color: var(--first-alpha-color);
+ transition: all 0.3s ease-out;
+}
+
+.dropdown-item:hover {
+  color: var(--second-color);
+}
+
+.dropdown-menu {
+  --bs-dropdown-font-size: 0.9rem;
+}
+
+.navbar-brand img {
+ width: auto;
+ height: 40px;
+ padding-left: 0.9rem;
+}
+
+.nav-item {   
+ transition: all 0.3s ease-out;
+}
+
+/* Aplicamos estilo a . nav-item con la pseudoclase :hover*/
+.nav-item:hover {
+ background-color: var(--first-alpha-color);
+}
+
+.nav-link {
+ padding-left: 0.5rem;
+ color: var(--bs-white);
+ font-size: 0.9rem;
+}
+
+.nav-link:hover {
+ color: var(--first-color);
+} 
+
+.small, small {
+  font-size: 10px;
+}
+
+/*  **********  My Styles  **********  */
+
+.bg-color{
+ background-color:  var(--gb-color-2);
+}
+
+.bg-alpha-color {
+ background-color:  var(--bg-alpha-color);
+ background-image: linear-gradient(
+  90deg,
+  rgb(241, 237, 237, 0.75),
+  rgb(255,255,255 0.30)
+ );
+}
+
+.bg-second-alpha-color {
+ background-color: var(--second-alpha-color);
+}
+
+.bg-gradient-gray-white {
+ background-color: var (-- grayLigth-color);
+ background-image: linear-gradient(
+  135deg,
+  rgba(248, 240, 253, 0.75),
+  rgb(255,255,255)
+ );
+
+ background-image: linear-gradient(
+  131.deg
+  rgb(216, 213, 213),
+  rgb(219, 214, 214)
+ );
+}
+
+.bg--second-color {
+ background-color:  rgb(0, 0, 0);
+}
+
+.bg-hero-image {
+ background-image: var(--bg-image);
+ background-repeat: no-repeat;
+ background-size: cover; 
+ background-position: center;
+}
+
+.contacto-hero {
+ background: url(../images/contacto-hero.png);
+ background-repeat: no-repeat;
+ background-size: cover; 
+ height: 0.5vh;
+ min-height: 400px;
+ color: var(--white-color) !important;
+ background-position: center;
+}
+
+.error-404-hero {
+ /*background: url(../images/404.png);*/
+ background-repeat: no-repeat;
+ background-size: cover; 
+ color: var(--text-color) !important;
+ height: 100vh;
+ background-position: center;
+}
+
+.gracias-hero {
+  /*background: url(../images/gracias-1.png);*/
+  background-repeat: no-repeat;
+  background-size: cover; 
+  color: var(--text-color) !important;
+  height: 100vh;
+  background-position: center;
+ }
+
+.calificaciones {
+  background-color: var(--bg-alpha-color);
+  padding-bottom: 4rem !important;
+  color: var(--dark-color); 
+} 
+
+.calificaciones {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+/* **********  BBGlow ********** */
+/* **********  ****** ********** */
+
+.bbglow-hero {
+  background: url(../images/bbglow-hero.png);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  color: var(--white-color) !important; 
+  height: 0.5vh;
+  min-height: 400px;
+  background-position: center;
+ }
+
+#text-bbglow p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+#text-bbglow h4 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+#text-bbglow ul {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.card-bbGlow {
+  border-radius: 30px;
+  box-shadow: 5px 5px 1em 5px rgb(2, 2, 2, .2);
+  /*box-shadow: 12px 12px 12px 0px rgb(0, 0, 0, .2);*/
+  transition: background 0.75s, transform 0.75s ease-out;
+}
+
+.card-bbGlow:hover {
+  transform: translateY(-30px);
+  box-shadow: 1px 1px 1em 1px var(--fourth-color);
+}
+
+.card-bbGlow-imagen {
+  border-radius: 30px 30px 1px 30px ;
+}
+
+/* **********  CUPPING ********** */
+/* **********  ******* ********** */
+
+.cupping-ventosaterapia-hero {
+  background: url(../images/cupping-ventosaterapia-hero.png);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  height: 0.5vh;
+  min-height: 400px;
+  color: var(--white-color) !important;
+  background-position: center;
+}
+
+.cupping-hero-fijo-2 {
+  background: url(../images/cupping-andrea-rios.png);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  color: var(--dark-color);
+  height: 100vh;
+  min-height: 400px;
+  background-position: center;
+}
+
+#cuppingCirculos {
+  background: #f1f3f3;
+  padding-top: 10px;
+  padding-bottom: 25px;
+}
+
+.img-cuppingCirculos {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.img-cuppingCirculos .img-fluid {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#cupping-ventosas {
+  padding-top: 0;
+  padding-bottom: 70px;
+}
+
+.tarjetas-cupping-ventosas-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+  font-family: "Raleway";
+}
+
+.tarjetas-cupping-ventosas-list div {
+  font-family: "Raleway";
+  background: var(--fourth-color);
+  padding: 30px;
+  border-radius: 30px 30px 1px 30px;
+  transition: background 0.75s, transform 0.75s;
+  color: var(--white-color);
+}
+
+.tarjetas-cupping-ventosas-list div:hover {
+  background: var(--first-color);
+  transform: translateY(-20px);
+}
+
+.tarjetas-cupping-ventosas-list div h3 {
+  font-family: "Raleway";
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.tarjetas-cupping-ventosas-list div p {
+  font-family: "Raleway";
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  text-align:start;
+}
+
+.tarjetas-cupping-ventosas-list div a {
+  text-decoration: none;
+  color: var(--white-color);
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+/*  ********** DEPILACION DEFINITIVA **********  */
+/*  ********** ********** ********** **********  */
+
+.carousel-caption-depilacion {
+  position: absolute;
+  right: 15%;
+  top: 60px;
+  left: 20%;
+  z-index: 10;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  color: #585858;
+  text-align: start;
+  background-color: none;
+}
+
+.depilacion-hero-fijo {
+  background: url(../images/depilacion-hero-fijo.png);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  color: var(--dark-color);
+  height: 0.5vh;
+  min-height: 500px;
+  background-position: center;
+}
+
+.depilacion-hero-fijo-2 {
+  background: url(../images/depilacion-hero-fijo-2.png);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  color: var(--dark-color);
+  height: 0.5vh;
+  min-height: 550px;
+  background-position: center;
+}
+
+#depilacionDefinitiva {
+  background: #f1f3f3;
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+
+.img-depilacion-definitiva {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  align-items: flex-start;
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+
+.img-depilacion-definitiva .img-fluid {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.depilacion-importante {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  align-items: flex-start;
+}
+
+#depilacion-definitiva {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.depilacion-margin {
+  margin-bottom: 0px;
+}
+
+.implementacion-depilacion ul {
+  padding-left: 10px;
+}
+
+.tarjetas-depilacion-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 30px;
+  margin-top: 40px;
+  font-family: "Raleway";
+}
+
+.tarjetas-depilacion-list div {
+  font-family: "Raleway";
+  background: var(--fourth-color);
+  padding: 10px;
+  border-radius: 30px 30px 1px 30px;
+  transition: background 0.75s, transform 0.75s;
+  color: var(--white-color);
+}
+
+.tarjetas-depilacion-list div:hover {
+  background: var(--first-color);
+  transform: translateY(-20px);
+}
+
+.tarjetas-depilacion-list div h3 {
+  font-family: "Raleway";
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.tarjetas-depilacion-list div p {
+  font-family: "Raleway";
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  text-align:start;
+}
+
+.tarjetas-depilacion-list div a {
+  text-decoration: none;
+  color: var(--white-color);
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+/*  ********** DERMAPLANING **********  */
+/*  ********** ************ **********  */
+
+.dermaplaning-hero  {
+  background: url(../images/dermaplaning-hero.png);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  height: 0.5vh;
+  min-height: 400px;
+  color: var(--white-color) !important;
+  background-position: center;
+ }
+
+ #dermaplaningCirculos {
+  background: #f1f3f3;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.img-dermaplaning-circulos {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.img-dermaplaning-circulos .img-fluid {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* ********** DERMAPEN ********** */
+/* ********** ******** ********** */
+
+.carousel-caption-dermapen {
+  position: absolute;
+  right: 15%;
+  top: 60px;
+  left: 20%;
+  z-index: 10;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: start;
+  background-color: none;
+}
+
+.dermapen-hero-fijo {
+  background: url(../images/dermapen-hero-fijo.png);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  color: var(--dark-color);
+  height: 0.5vh;
+  min-height: 500px;
+  background-position: center;
+}
+
+.dermapen-hero-fijo ul {
+  padding-left: 10px;
+}
+
+#antiAgingFijo {
+  background: #f1f3f3;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* ********** DRENAJE LINFÁTICO ********** */
+/* ********** ******* ********* ********** */
+#container-con-texto {
+  margin-left: 10px;
+}
+
+#drenaje-linfatico-card {
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+
+.drenaje-linfático-hero {
+  background: url(../images/drenaje-linfatico-hero.png);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  color: var(--dark-color);
+  height: 100vh;
+  min-height: 400px;
+  background-position: center;
+}
+
+.tarjetas-drenajelinfatico-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 40px;
+  font-family: "Raleway";
+}
+
+.tarjetas-drenajelinfatico-list div {
+  font-family: "Raleway";
+  background: var(--fourth-color);
+  padding: 10px;
+  border-radius: 30px 30px 1px 30px;
+  transition: background 0.75s, transform 0.75s;
+  color: var(--white-color);
+}
+
+.tarjetas-drenajelinfatico-list div:hover {
+  background: var(--first-color);
+  transform: translateY(-20px);
+}
+
+.tarjetas-drenajelinfatico-list div h3 {
+  font-family: "Raleway";
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.tarjetas-drenajelinfatico-list div p {
+  font-family: "Raleway";
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  text-align:start;
+}
+
+.tarjetas-drenajelinfatico-list div a {
+  text-decoration: none;
+  color: var(--white-color);
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+#drenajeLinfaticoCirculos {
+  background: #f1f3f3;
+  padding-top: 45px;
+  padding-bottom: 21px;
+}
+
+.img-drenajeLinfaticoCirculos {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.img-drenajeLinfaticoCirculos .img-fluid {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.fa-solid,
+.fa-regular,
+.fa-solid  {
+  display: flex;
+  font-size: 35px;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+/* ********** HOME SERVICIOS Styles ********** */
+/* ********** **** ********* ****** ********** */
+
+.swiper {
+  width: 100%;
+}
+
+.swiper-wrapper {
+  width: 100%;
+  height: 35em;
+  display: flex;
+  align-items: center;
+}
+
+.cards {
+  width: 20em;
+  height: 85%;
+  background-color: #fff;
+  border-radius: 2em;
+  box-shadow: 0 0 2em rgb(0, 0, 0, .2);
+  padding: 2em 1em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 1em;
+}
+
+/*.swiper-slide:not(.swiper-slide-active){
+  filter: blur(1.5px);
+}*/
+
+.cards-image {
+  width: 12em;
+  height: 12em;
+  border-radius: 100%;
+  border: 5px solid var(--first-alpha-color);
+  padding: 2px;
+  margin-bottom: 1em;
+}
+
+.cards-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.cards-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cards-title {
+  font-size: 1.5em;
+  font-weight: 400;
+  position: relative;
+  top: .2em;
+}
+
+.card-text {
+  text-align: center;
+  font-size: 0.9em;
+  margin: 1em 0;
+}
+
+.card-rutina {
+  border-radius: 30px;
+  box-shadow: 5px 5px 1em 5px rgb(2, 2, 2, .2);
+  /*box-shadow: 12px 12px 12px 0px rgb(0, 0, 0, .2);*/
+  transition: background 0.75s, transform 0.75s ease-out;
+}
+
+.card-rutina:hover {
+  transform: translateY(-30px);
+  box-shadow: 5px 5px 1em 5px rgb(236, 38, 143);
+}
+
+.card-rutina-imagen {
+  border-radius: 30px 30px 1px 30px ;
+}
+
+/* ****** HOME BANNER PARALLAX ******  */
+.section-p1 {
+  padding: 20px 0px;
+}
+
+#banner-parallax {
+  background-image: url("../images/andrea-rios-tattoo-parallax.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+  min-height: 500px;
+  width: 100%;
+  background-position: top 70% center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; 
+  padding-left: 30px;
+}
+
+#banner-parallax h1 {
+  font-weight: 500;
+  font-size: 18px;
+  color: #565659;
+  margin-top: 20px;
+}
+
+#banner-parallax h4 {
+  font-weight: 500;
+  font-size: 14px;
+  color: #565659;
+}
+
+#banner-parallax button {
+  margin-top: 30px;
+}
+
+
+/*  ********** LIPOPLASER **********  */
+/*  ********** ********** **********  */
+
+.lipolaser-hero2 {
+  background: url(../images/lipolaser-hero.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 0.5vh;
+  min-height: 400px;
+  color: var(--dark-color);
+  background-position: center;
+}
+
+.swiperlipolaser { /* body*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 45vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: trans;
+}
+
+.containerr {
+  max-width: 1120px;
+  width: 90%;
+  height: 100%;
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+
+.slide-container {
+  margin: 0 30px;
+  overflow: hidden;
+}
+
+.cardss {
+  background: #d1d2d3;
+  border-radius: 10px;
+}
+
+.cardss .image-box {
+  height: 200px;
+}
+
+.cardss .image-box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.cardss .profile-details {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+  padding: 15px;
+}
+
+.profile-details .name {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.profile-details .job {
+  font-size: 15px;
+  font-weight: 500;
+  color: #4d4d4d;
+}
+
+.swiper-navBtn {
+  color: var(--first-color) !important;
+  height: 40px !important;
+  width: 40px !important;
+  background: var(--fourth-color);
+  border-radius: 50%;
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+  font-size: 22px !important;
+}
+
+.slide-container {
+  margin: 0 30px;
+  overflow: hidden;
+}
+
+.swiper-pagination-bullet {
+  background-color: var(--first-color) !important;
+}
+
+/*  ********** LIMPIEZA FACIAL **********  */
+/*  ********** ******** ****** **********  */
+
+.limpieza-facial-hero {
+  background: url(../images/limpieza-facial-hero.png);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  height: 0.5vh;
+  min-height: 400px;
+  color: var(--white-color) !important;
+  background-position: center;
+}
+
+.swiperlimpieza { /* body*/
+  margin: 30px;
+  padding: 30px;
+  box-sizing: border-box;
+  min-height: 0.5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: trans;
+}
+
+.containeeer {
+  max-width: 1120px;
+  width: 100%;
+  height: 100%;
+}
+
+.slide-container {
+  margin: 0 30px;
+  overflow: hidden;
+}
+
+.cardds {
+  background: #d1d2d3;
+  border-radius: 10px;
+}
+
+.cardds .image-box {
+  height: 200px;
+}
+
+.cardds .image-box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.cardds .profile-details {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+  padding: 15px;
+}
+
+.profile-details .titulo {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.profile-details .detalle {
+  font-size: 13px;
+  font-weight: 500;
+  color: #4d4d4d;
+}
+
+.swiper-navBtn {
+  color: var(--first-color) !important;
+  height: 40px !important;
+  width: 40px !important;
+  background: var(--fourth-color);
+  border-radius: 50%;
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+  font-size: 22px !important;
+}
+
+.slide-container {
+  margin: 0 30px;
+  overflow: hidden;
+}
+
+.swiper-pagination-bullet {
+  background-color: var(--first-color) !important;
+}
+
+.card-limpieza-facial {
+  border-radius: 1px 30px 1px 30px;
+  box-shadow: 5px 5px 1em 5px rgb(2, 2, 2, .2);
+  font-size: 18px;
+  /*box-shadow: 12px 12px 12px 0px rgb(0, 0, 0, .2);*/
+}
+
+.card-limpieza-facial .card-img {
+  border-radius: 1px 30px 1px 30px;
+}
+
+/* **********  MASAJE ANTIESTRÉS 2 ********** */
+/* **********  ****** ********** ********** */
+
+.antiestres-hero {
+  background: url(../images/masaje-antiestres-hero-0.png);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  color: var(--white-color) !important; 
+  height: 100vh;
+  min-height: 400px;
+  background-position: center;
+ }
+
+ .antiestres-hero-abajo {
+  background: url(../images/masaje-antiestres-hero.png);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  color: var(--white-color) !important; 
+  height: 100vh;
+  min-height: 400px;
+  background-position: center;
+ }
+
+#antiestres h3 {
+  color: #585858;
+}
+
+#text-antiestres p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+#text-antiestres h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+#text-antiestres ul {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.card-anti-estres {
+  border-radius: 30px;
+  box-shadow: 5px 5px 1em 5px rgb(2, 2, 2, .2);
+  /*box-shadow: 12px 12px 12px 0px rgb(0, 0, 0, .2);*/
+  transition: background 0.75s, transform 0.75s ease-out;
+}
+
+.card-anti-estres:hover {
+  transform: translateY(-30px);
+  box-shadow: 1px 1px 1em 1px var(--fourth-color);
+}
+
+.card-antiestres-imagen {
+  border-radius: 30px 30px 1px 30px ;
+}
+
+/* ********** MASAJE TERAPÉUTICO ********** */
+/* ********** ****** *********** ********** */
+
+.carousel-caption-masaje-terapeutico {
+  position: absolute;
+  right: 15%;
+  top: 60px;
+  left: 20%;
+  z-index: 10;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  color: #585858;
+  text-align: start;
+  background-color: none;
+}
+
+.masaje-terapeutico-hero-fijo {
+  background: url(../images/masaje-terapeutico-hero-fijo.png);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  color: var(--dark-color);
+  height: 100vh;
+  min-height: 400px;
+  background-position: center;
+}
+
+#masaje-terapeutico {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#masajeTerapeutico {
+  background: #f1f3f3;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.img-masaje-terapeutico {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  align-items: flex-start;
+  margin-bottom: 10;
+  margin-top: 10px;
+}
+
+.img-masaje-terapeutico .img-fluid {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.tarjetas-masajes-terapeuticos-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 30px;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  font-family: "Raleway";
+}
+
+.tarjetas-masajes-terapeuticos-list div {
+  font-family: "Raleway";
+  background: var(--fourth-color);
+  padding: 10px;
+  border-radius: 30px 30px 1px 30px;
+  transition: background 0.75s, transform 0.75s;
+  color: var(--white-color);
+}
+
+.tarjetas-masajes-terapeuticos-list div:hover {
+  background: var(--first-color);
+  transform: translateY(-20px);
+}
+
+.tarjetas-masajes-terapeuticos-list div h3 {
+  font-family: "Raleway";
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.tarjetas-masajes-terapeuticos-list div p {
+  font-family: "Raleway";
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  text-align:start;
+}
+
+.tarjetas-masajes-terapeuticos-list div a {
+  text-decoration: none;
+  color: var(--white-color);
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.card-masajeTerapeutico {
+  border-radius: 30px;
+  /*box-shadow: 5px 5px 1em 5px rgb(2, 2, 2, .2);*/
+  box-shadow: 0px 0px 0px 0px rgb(0, 0, 0, .2);
+  transition: background 0.75s, transform 0.75s ease-out;
+}
+
+.card-masajeTerapeutico div.card-body {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.card-masajeTerapeutico:hover {
+  transform: translateY(-20px);
+  /*box-shadow: 1px 1px 1em 1px  var(--first-color);*/
+}
+
+.card-masajeTerapeutico-imagen {
+  border-radius: 30px 30px 1px 30px ;
+}
+
+
+/* ********** NANO BOTOX ********** */
+/* ********** **** ***** ********** */
+
+.carouselNanoBotox {
+  position: absolute;
+  right: 15%;
+  top: 120px;
+  left: 10%;
+  z-index: 10;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: start;
+  background-color: none;
+  height: 100vh;
+  min-height: 400px;
+ } 
+
+.carousel-caption-botox {
+  position: absolute;
+  right: 15%;
+  top: 60px;
+  left: 20%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: var(--dark-color);
+  text-align: start;
+  background-color: none;
+ } 
+
+ .nano-botox-hero {
+  background: url(../images/nano-botox-hero-andrea-rios.png);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  color: var(--dark-color);
+  height: 0.5vh;
+  min-height: 500px;
+  background-position: center;
+ }
+
+ .nanobotox-color {
+  color: var(--white-color);
+ }
+
+ #textoNanoBotox {
+  /*background:rgb(241, 243, 243);*/
+  background: var(--fourth-color);
+  padding: 40px;
+  color: #ffffff;
+}
+
+
+/*  ********** REIKI **********  */
+/*  ********** ***** **********  */
+
+.carousel-caption-reiki {
+  position: absolute;
+  right: 15%;
+  top: 60px;
+  left: 20%;
+  z-index: 10;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  color: #585858;
+  text-align: start;
+  background-color: none;
+}
+
+.reiki-hero-fijo {
+  background: url(../images/reiki-hero-fijo.png);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  color: var(--dark-color);
+  height: 100vh;
+  min-height: 400px;
+  background-position: center;
+}
+
+.reiki-hero-fijo-2 {
+  background: url(../images/reiki-hero-fija-media.png);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  color: var(--dark-color);
+  height: 100vh;
+  min-height: 400px;
+  background-position: center;
+}
+
+#reikiCirculos {
+  background: #f1f3f3;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.img-reikiCirculos {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.img-reikiCirculos .img-fluid {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.reiki-importante {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  align-items: flex-start;
+}
+
+#reiki-tarjetas {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.tarjetas-reiki-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 30px;
+  margin-top: 40px;
+  font-family: "Raleway";
+}
+
+.tarjetas-reiki-list div {
+  font-family: "Raleway";
+  background: var(--fourth-color);
+  padding: 10px;
+  border-radius: 30px 30px 1px 30px;
+  transition: background 0.75s, transform 0.75s;
+  color: var(--white-color);
+}
+
+.tarjetas-reiki-list div:hover {
+  background: var(--first-color);
+  transform: translateY(-20px);
+}
+
+.tarjetas-reiki-list div h3 {
+  font-family: "Raleway";
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.tarjetas-reiki-list div p {
+  font-family: "Raleway";
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  text-align:start;
+}
+
+.tarjetas-reiki-list div a {
+  text-decoration: none;
+  color: var(--white-color);
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+
+/* ********** PEELING ********** */
+/* ********** ******* ********** */
+
+.carouselPeeling {
+  position: absolute;
+  right: 15%;
+  top: 120px;
+  left: 10%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: start;
+  background-color: none;
+  height: 100vh;
+  min-height: 400px;
+ } 
+
+ .peeling-hero-fijo {
+  background: url(../images/peeling-hero-1.png);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  color: var(--dark-color);
+  height: 0.5vh;
+  min-height: 500px;
+  background-position: center;
+ }
+
+.p-peeling {
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.card {
+  border-radius: 30px 30px 1px 30px;
+  box-shadow: 4px 4px 1em 4px rgb(2, 2, 2, .2);
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.card-img-top {
+  border-radius: 30px 30px 1px 30px;
+}
+
+#beneficios-peeling {
+ background: rgb(241, 243, 243);
+}
+
+.ul-beneficios-uno {
+  margin-left: 20px;
+}
+
+.ul-beneficios-dos {
+  margin-left: 20px;
+}
+
+.tipos-de-peeling {
+  background:rgb(241, 243, 243);
+  }
+
+/* ********** RADIOFRECUENCIA CORPORAL ********** */
+/* ********** *************** ******** ********** */
+
+.radiofrecuencia-corporal-hero {
+  background: url(../images/radiofrecuencia-corporal-hero.png);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  color: var(--dark-color);
+  height: 0.5vh;
+  min-height: 400px;
+  background-position: center;
+}
+
+.grafico-radiofrecuencia {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  align-items: flex-start;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
+
+}
+
+#radiofrecuencia-corporal-card {
+  padding-top: 0;
+  padding-bottom: 30px;
+}
+
+.tarjetas-radiofrecuencia-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 40px;
+  font-family: "Raleway";
+}
+
+.tarjetas-radiofrecuencia-list div {
+  font-family: "Raleway";
+  background: var(--fourth-color);
+  padding: 10px;
+  border-radius: 30px 30px 1px 30px;
+  transition: background 0.75s, transform 0.75s;
+  color: var(--white-color);
+}
+
+.tarjetas-radiofrecuencia-list div:hover {
+  background: var(--first-color);
+  transform: translateY(-20px);
+}
+
+.tarjetas-radiofrecuencia-list div h3 {
+  font-family: "Raleway";
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.tarjetas-radiofrecuencia-list div p {
+  font-family: "Raleway";
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  text-align:start;
+}
+
+.tarjetas-radiofrecuencia-list div a {
+  text-decoration: none;
+  color: var(--white-color);
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+/* ********** RADIOFRECUENCIA FACIAL ********** */
+/* ********** *************** ****** ********** */
+
+.radiofrecuencia-facial-hero {
+  background: url(../images/radiofrecuencia-facial-hero-1.png);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  color: var(--dark-color);
+  height: 0.5vh;
+  min-height: 400px;
+  background-position: center;
+}
+
+#radioFrecuenciaFacial {
+  background: none;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+.img-radiofrecuencia-facial {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.img-radiofrecuencia-facial .img-fluid {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.tarjetas-radiofrecuencia-facial-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 40px;
+  font-family: "Raleway";
+}
+
+.tarjetas-radiofrecuencia-facial-list div {
+  font-family: "Raleway";
+  background: var(--fourth-color);
+  padding: 10px;
+  border-radius: 30px 30px 1px 30px;
+  transition: background 0.75s, transform 0.75s;
+  color: var(--white-color);
+}
+
+.tarjetas-radiofrecuencia-facial-list div:hover {
+  background: var(--first-color);
+  transform: translateY(-20px);
+}
+
+.tarjetas-radiofrecuencia-facial-list div h3 {
+  font-family: "Raleway";
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.tarjetas-radiofrecuencia-facial-list div p {
+  font-family: "Raleway";
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  text-align:start;
+}
+
+.tarjetas-radiofrecuencia-facial-list div a {
+  text-decoration: none;
+  color: var(--white-color);
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+/* **********  REFLEXOLOGÍA ********** */
+/* **********  ************ ********** */
+
+#reflexologia-container {
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+.reflexologia-hero {
+  background: url(../images/reflexologia-andrea-rios-hero-1.png);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  color: var(--dark-color);
+  height: 0.5vh;
+  min-height: 500px;
+  background-position: center;
+}
+
+.primera.img-fluid {
+  display: flex;
+  justify-content: center;
+  width: 85%;
+  height: auto;
+  align-items: center;
+  padding: 20px 0 30px 50px;
+}
+
+.segunda.img-fluid {
+  display: flex;
+  justify-content: center;
+  width: 85%;
+  height: auto;
+  align-items: center;
+  padding: 20px 50px 30px 20px;
+}
+
+#reflexologia-container .p-segunda {
+  display: block;
+  margin-block-start: 0;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 16px;
+}
+
+#reflexologiaBannerFijo {
+  background: #f1f3f3;
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
+
+.img-reflexologia {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.img-reflexologia .img-fluid {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+
+/* ********** SOBRE ANDREA ********** */
+/* ********** ***** ****** ********** */
+
+.sobre-andrea-hero {
+  background: url(../images/sobre-andrea-hero.png);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  color: var(--dark-color);
+  height: 0.5vh;
+  min-height: 400px;
+  background-position: center;
+}
+
+/* ---------- ABOUT ---------- */
+
+#about {
+  padding: 10px 0;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /*color: #ababab;*/
+  color: var(--text-color);
+}
+
+.about-col-1 {
+  flex-basis: 90%;
+}
+
+.about-col-1 img {
+  width: 0%;
+  border-radius: 15px;
+  transition: transform 0.5s;
+}
+
+.about-col-1:hover img {
+  transform: scale(1.1);
+}
+
+.about-col-2 {
+  flex-basis: 90%;
+}
+
+.about-col-2 {
+  font-size: 15px;
+  text-align: justify;
+}
+
+.sub-title-about {
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 35px;
+  font-family: "Raleway";
+  color: var(--dark-color);
+}
+
+.tab-titles {
+  display: flex;
+  margin: 0px 10px;
+}
+
+.tab-links {
+  margin-right: 80px;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+
+.tab-links:hover {
+  color: var(--first-color);
+}
+
+.tab-links::after {
+  content: '';
+  width: 0;
+  height: 2px;
+  background: var(--first-color);
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  transition: 0.5s ease-out;
+} 
+
+.tab-links.active-link::after {
+  width: 100%;
+}
+
+.tab-contents ul {
+  padding-left: 1rem;
+}
+
+.tab-contents ul li {
+  list-style: none;
+  font-size: 14px;
+}
+
+.tab-contents ul li span {
+  color: var(--first-color);
+  font-size: 14px;
+}
+
+.tab-contents {
+  display: none;
+}
+
+.tab-contents.active-tab {
+  display: block;
+}
+
+/* ---------- SERVICES  ---------- */
+/* ---------- --------- ---------- */
+
+
+#services {
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.sub-title-services {
+  font-size: 20px;
+  font-weight: 300;
+  /*line-height: 55px;*/
+  font-family: "Raleway";
+  color: var(--dark-color);
+}
+
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+  font-family: "Raleway";
+}
+
+.services-list div {
+  font-family: "Raleway";
+  background: var(--first-color);
+  padding: 30px;
+  border-radius: 15px;
+  transition: background 0.75s, transform 0.75s;
+  color: var(--white-color);
+}
+
+.services-list div:hover {
+  background: #585858;
+  transform: translateY(-20px);
+}
+
+.services-list div h3 {
+  font-family: "Raleway";
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.services-list div p {
+  font-family: "Raleway";
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  text-align:start;
+}
+
+.services-list div a {
+  text-decoration: none;
+  color: var(--white-color);
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.fa-code, 
+.fa-crop-simple,
+.fa-cart-shopping {
+  font-size: 40px;
+}
+
+/* ---------- PORTFOLIO ---------- */
+/* ---------- ---------- ---------- */
+
+
+#portfolio {
+  padding: 5px 0;
+}
+
+.sub-title-portfolio {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 55px;
+  font-family: "Raleway";
+  color: var(--dark-color);
+}
+
+
+.portfolio-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  grid-gap: 30px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-family: "Raleway";
+}
+
+.portfolio {
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio img {
+  width: 100%;
+  border-radius: 30px;
+  display: block;
+  transition: transform 0.5s;
+}
+
+.layer {
+  width: 100%;
+  height: 0; /* No visible la capa rosada */
+  background: linear-gradient(rgb(0, 0, 0 , 0.1), var(--first-color));
+  border-radius: 30px;
+  color: var(--white-color);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  /*Datos para la capa transparente. Para bajar las letras ubicamos el display: */
+  display: flex;
+  align-items: center;
+  align-content: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 15px;
+  text-align:left;
+  font-size: 16px;
+  transition: height 0.5s;
+}
+
+.layer h3 {
+  margin-top: 180px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  font-size: 22px;
+}
+
+.portfolio:hover img {
+  transform: scale(1.1);
+}
+
+.portfolio:hover .layer {
+  height: 100%;
+}
+
+/* **********  TATTOO REMOVAL ********** */
+/* **********  ************ ********** */
+
+#reflexologia-container {
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+.tatoo-hero {
+  background: url(../images/andrea-rios-tattoo-parallax.png);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  color: var(--dark-color);
+  height: 0.5vh;
+  min-height: 500px;
+  background-position: center;
+}
+
+.primera.img-fluid {
+  display: flex;
+  justify-content: center;
+  width: 85%;
+  height: auto;
+  align-items: center;
+  padding: 20px 0 30px 50px;
+}
+
+.segunda.img-fluid {
+  display: flex;
+  justify-content: center;
+  width: 85%;
+  height: auto;
+  align-items: center;
+  padding: 20px 50px 30px 20px;
+}
+
+#reflexologia-container .p-segunda {
+  display: block;
+  margin-block-start: 0;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 16px;
+}
+
+#reflexologiaBannerFijo {
+  background: #f1f3f3;
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
+
+.img-reflexologia {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.img-reflexologia .img-fluid {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+
+/* **********  TERAPIA LED ********** */
+/* **********  ******* *** ********** */
+
+
+.terapia-led-fijo {
+  background: url(../images/terapia-led-fijo.png);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  color: var(--dark-color);
+  height: 0.5vh;
+  min-height: 400px;
+  background-position: center;
+}
+
+.img-terapia-led {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.img-terapia-led .img-fluid {
+  padding: 20px;
+}
+
+/* **********  ULTRACAVITACIÓN ********** */
+/* **********  *************** ********** */
+
+.ultracavitacion-hero {
+  background: url(../images/ultracavitacion-hero.png);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  height: 0.5vh;
+  min-height: 400px;
+  color: var(--dark-color);
+  background-position: center;
+}
+
+#ultracavitacion {
+  padding-top: 0;
+  padding-bottom: 70px;
+}
+
+.tarjetas-ultracavitacion-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+  font-family: "Raleway";
+}
+
+.tarjetas-ultracavitacion-list div {
+  font-family: "Raleway";
+  background: var(--fourth-color);
+  padding: 30px;
+  border-radius: 30px 30px 1px 30px;
+  transition: background 0.75s, transform 0.75s;
+  color: var(--white-color);
+}
+
+.tarjetas-ultracavitacion-list div:hover {
+  background: var(--first-color);
+  transform: translateY(-20px);
+}
+
+.tarjetas-ultracavitacion-list div h3 {
+  font-family: "Raleway";
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.tarjetas-ultracavitacion-list div p {
+  font-family: "Raleway";
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  text-align:start;
+}
+
+.tarjetas-ultracavitacion-list div a {
+  text-decoration: none;
+  color: var(--white-color);
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+
+/*  ********** FORMULARIOS DE CONTACTO **********  */
+
+.form-control {
+  border-radius:12px;
+  font-size: 0.85rem;
+ }
+ 
+ 
+ /* ********** FORMULARIO DE CONTACTO **********  */
+ 
+ .bg-color-start-form-gradient {
+  background-color: var (-- grayLigth-color);
+  background-image: linear-gradient(
+   135deg,
+   rgba(128, 0, 255),
+   rgb(224,0,255)
+  );
+ }
+ 
+ .lets-start-form {
+   width:80%;
+   padding: 10px;
+   border-radius:12px;
+   margin:10px;
+   background-color: none;
+   font-family: sans-serif;
+   font-size: 0.85rem;
+ }
+ 
+ .lets-start-form label{
+    width:70px;
+    font-weight: lighter;
+    display:inline-block;
+ }
+ 
+ .lets-start-form input[type="text"],
+ .lets-start-form input[type="email"],
+ .lets-start-form input[type="tel"]{
+   width: 100%;;
+   padding:4px 5px;
+   border:1px solid rgb(219, 214, 214);
+   border-radius: 12px;
+   background-color:rgb(219, 214, 214);
+   margin: 0;
+   display:inline-block;
+ }
+ 
+ .lets-start-form input[type="submit"] {
+   width:100%;
+   height: 30px;
+   padding: none;
+   margin-top: 1px;
+   border: none;
+   border-radius: 12px;
+   display:block;
+   color:white;
+   font-size: 15px;
+   font-weight: none;
+   background-color: var(--first-color);
+ } 
+ 
+ .lets-start-form input[type="submit"]:hover {
+  cursor:pointer;
+  color:white;
+    background-color: var(--third-color);
+  transition: 2s;
+ }
+ 
+ .lets-start-form input[type="submit"]:hover{
+    cursor:pointer;
+ }
+ 
+ .lets-start-form textarea {
+    width:100%;
+    height:125px;
+    border:1px solid rgb(219, 214, 214);
+    border-radius: 12px;
+    background-color:rgb(219, 214, 214);			
+    margin:8px 0;
+    /*resize: vertical | horizontal | none | both*/
+    resize:none;
+    display:block;
+  margin-top: 1px;
+  margin-bottom: 5px;
+ }
+ 
+ /* ********** FORMULARIOS DE LETS START: form-services ********** */
+ 
+ .form-lets-start {
+  font-size: 0.85rem;
+ }
+ 
+ .form-lets-start-2 {
+  font-size: 0.85rem;
+ }
+ 
+ .form-lets-start-3 {
+  font-size: 0.85rem;
+ }
+ 
+ .form-lets-start-4 {
+  font-size: 0.85rem;
+ }
+
+
+/* Las "media query" son característica de CSS. Permite crear e
+  implementar diseños que se adaptan a las propiedades del dispositivo que estás usando. */
+  
+/* X-Small devices (portrait phones, less than 576px)
+  No media query for `xs` since this is the default in Bootstrap */
+
+/*  Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  
+  .gracias-hero {
+    height: 0.5vh;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (max-width: 780px)
+/*@media (min-width: 768px)*/ {
+  .nav-item:hover {
+   background-color: transparent;
+  }
+  .antiestres-hero {
+    height: 0.5vh;
+    min-height: 300px;
+  }
+  .antiestres-hero-abajo {
+    height: 0.5vh;
+    min-height: 300px;
+  }
+  .masaje-terapeutico-hero-fijo {
+    height: 0.5vh;
+    min-height: 500px;
+  }
+  .bbglow-hero {
+    height: 0.5vh;
+    min-height: 500px;
+  }
+  .reiki-hero-fijo-2 {
+    height: 0.5vh;
+    min-height: 500px;
+  }
+  .reiki-hero-fijo {
+    height: 0.5vh;
+    min-height: 550px;
+}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media only screen and (max-width: 922px) {
+  .antiestres-hero {
+    height: 0.5vh;
+    min-height: 300px;
+  }
+  .antiestres-hero-abajo {
+    height: 0.5vh;
+    min-height: 300px;
+  }
+  .drenaje-linfático-hero {
+    height: 0.5vh;
+    min-height: 550px;
+  }
+  .masaje-terapeutico-hero-fijo {
+    height: 0.5vh;
+    min-height: 500px;
+  }
+  .bbglow-hero {
+    height: 0.5vh;
+    min-height: 500px;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+
+/* XX-Large devices (larger desktops, 1400px and up)  */
+@media (min-width: 1400px) {
+
+}
