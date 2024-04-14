@@ -42,14 +42,9 @@ a:hover {
 }
 
 body {
-  min-height: 100%;
-}
-
-body {
   font-family: "Raleway", sans-serif; 
   color:var(--text-color);
   font-size: 14px;
-  min-height: 100%;
  }
 
 html {
@@ -140,22 +135,19 @@ html {
 
 /* Aplicamos estilo a . nav-item con la pseudoclase :hover*/
 .nav-item:hover {
- background-color: var(--first-alpha-color);
+ /*background-color: var(--first-alpha-color);*/
 }
 
 .nav-link {
  padding-left: 0.5rem;
  color: var(--bs-white);
- font-size: 0.9rem;
+ font-size: 0.85rem;
 }
 
 .nav-link:hover {
  color: var(--first-color);
-} 
 
-.small, small {
-  font-size: 10px;
-}
+} 
 
 /*  **********  My Styles  **********  */
 
@@ -203,7 +195,7 @@ html {
 }
 
 .contacto-hero {
- background: url(../images/contacto-hero.png);
+ background: url(../images/contacto-hero.webp);
  background-repeat: no-repeat;
  background-size: cover; 
  height: 0.5vh;
@@ -217,7 +209,7 @@ html {
  background-repeat: no-repeat;
  background-size: cover; 
  color: var(--text-color) !important;
- height: 100vh;
+ height: 80vh;
  background-position: center;
 }
 
@@ -231,7 +223,7 @@ html {
  }
 
 .calificaciones {
-  background-color: var(--bg-alpha-color);
+  background-color: var(--bg-color);
   padding-bottom: 4rem !important;
   color: var(--dark-color); 
 } 
@@ -245,7 +237,7 @@ html {
 /* **********  ****** ********** */
 
 .bbglow-hero {
-  background: url(../images/bbglow-hero.png);
+  background: url(../images/bbglow-hero.webp);
   background-repeat: no-repeat;
   background-size: cover; 
   color: var(--white-color) !important; 
@@ -291,11 +283,19 @@ html {
   border-radius: 30px 30px 1px 30px ;
 }
 
+/* **********  CONTACTO ********** */
+/* **********  ******** ********** */
+
+.contacto-hero h5 {
+  font-size: 20px;
+}
+
+
 /* **********  CUPPING ********** */
 /* **********  ******* ********** */
 
 .cupping-ventosaterapia-hero {
-  background: url(../images/cupping-ventosaterapia-hero.png);
+  background: url(../images/cupping-ventosaterapia-hero.webp);
   background-repeat: no-repeat;
   background-size: cover; 
   height: 0.5vh;
@@ -305,7 +305,7 @@ html {
 }
 
 .cupping-hero-fijo-2 {
-  background: url(../images/cupping-andrea-rios.png);
+  background: url(../images/cupping-andrea-rios.webp);
   background-repeat: no-repeat;
   background-size: cover; 
   color: var(--dark-color);
@@ -403,9 +403,9 @@ html {
 }
 
 .depilacion-hero-fijo {
-  background: url(../images/depilacion-hero-fijo.png);
+  background: url(../images/depilacion-hero-fijo.webp);
   background-repeat: no-repeat;
-  background-size: cover; 
+  background-size: cover;
   color: var(--dark-color);
   height: 0.5vh;
   min-height: 500px;
@@ -413,7 +413,7 @@ html {
 }
 
 .depilacion-hero-fijo-2 {
-  background: url(../images/depilacion-hero-fijo-2.png);
+  background: url(../images/depilacion-hero-fijo-2.webp);
   background-repeat: no-repeat;
   background-size: cover; 
   color: var(--dark-color);
@@ -475,7 +475,7 @@ html {
 .tarjetas-depilacion-list div {
   font-family: "Raleway";
   background: var(--fourth-color);
-  padding: 10px;
+  padding: 30px;
   border-radius: 30px 30px 1px 30px;
   transition: background 0.75s, transform 0.75s;
   color: var(--white-color);
@@ -514,7 +514,7 @@ html {
 /*  ********** ************ **********  */
 
 .dermaplaning-hero  {
-  background: url(../images/dermaplaning-hero.png);
+  background: url(../images/dermaplaning-hero.webp);
   background-repeat: no-repeat;
   background-size: cover; 
   height: 0.5vh;
@@ -561,7 +561,7 @@ html {
 }
 
 .dermapen-hero-fijo {
-  background: url(../images/dermapen-hero-fijo.png);
+  background: url(../images/dermapen-hero-fijo.webp);
   background-repeat: no-repeat;
   background-size: cover; 
   color: var(--dark-color);
@@ -592,7 +592,7 @@ html {
 }
 
 .drenaje-linfático-hero {
-  background: url(../images/drenaje-linfatico-hero.png);
+  background: url(../images/drenaje-linfatico-hero.webp);
   background-repeat: no-repeat;
   background-size: cover; 
   color: var(--dark-color);
@@ -621,6 +621,11 @@ html {
 .tarjetas-drenajelinfatico-list div:hover {
   background: var(--first-color);
   transform: translateY(-20px);
+}
+
+.tarjetas-drenajelinfatico-list ul {
+  padding-left: 16px;
+  padding-bottom: 16px;
 }
 
 .tarjetas-drenajelinfatico-list div h3 {
@@ -684,7 +689,7 @@ html {
 }
 
 .swiper-wrapper {
-  width: 100%;
+  width: 99%;
   height: 35em;
   display: flex;
   align-items: center;
@@ -764,11 +769,11 @@ html {
 }
 
 #banner-parallax {
-  background-image: url("../images/andrea-rios-tattoo-parallax.png");
+  background-image: url("../images/andrea-rios-tattoo-parallax.webp");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 70vh;
-  min-height: 500px;
+  height: 60vh;
+  min-height: 400px;
   width: 100%;
   background-position: top 70% center;
   background-attachment: fixed;
@@ -776,7 +781,7 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start; 
-  padding-left: 30px;
+  padding-left: 20px;
 }
 
 #banner-parallax h1 {
@@ -787,21 +792,203 @@ html {
 }
 
 #banner-parallax h4 {
-  font-weight: 500;
-  font-size: 14px;
-  color: #565659;
+  color: var(--bs-heading-color,inherit);
 }
 
 #banner-parallax button {
   margin-top: 30px;
 }
 
+/* ****** HOME MASOTERAPIA ******  */
+.img-masoterapia-home {
+  margin-right: 5px;
+}
+.img-lipolaser-home {
+  margin-left: 150px;
+}
+
+
+/* ****** HOME TODOS LOS SERVICIOS ******  */
+#servicios-todos {
+  padding: 5px 0;
+  background-color:#fff;
+}
+#servicios-todos h5 {
+  font-size: 24px;
+  font-family: "Raleway", sans-serif;
+  color: var(--text-color);
+}
+
+.sub-title-servicios-todos {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 55px;
+  font-family: "Raleway";
+  color: var(--dark-color);
+}
+
+.servicios-list-todos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  grid-gap: 30px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-family: "Raleway";
+}
+
+.servicios-todoss {
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.servicios-todoss img {
+  width: 100%;
+  border-radius: 30px;
+  display: block;
+  transition: transform 0.5s;
+}
+
+.layer {
+  width: 100%;
+  height: 0; /* No visible la capa rosada */
+  background: linear-gradient(rgb(0, 0, 0 , 0.1), var(--first-color));
+  border-radius: 30px;
+  color: var(--white-color);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  /*Datos para la capa transparente. Para bajar las letras ubicamos el display: */
+  display: flex;
+  align-items: center;
+  align-content: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 15px;
+  text-align:left;
+  font-size: 14px;
+  transition: height 0.5s;
+}
+
+.layer h3 {
+  margin-top: 180px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  font-size: 25px;
+}
+
+.servicios-todoss:hover img {
+  transform: scale(1.1);
+}
+
+.servicios-todoss:hover .layer {
+  height: 100%;
+}
+
+/* ****** HOME BANNER DEPILACIÓN ******  */
+.banner-depilacion-home {
+  background: url(../images/depilacion-hero-fijo-2.webp);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  color: var(--dark-color);
+  height: 0.5vh;
+  min-height: 550px;
+  background-position: center;
+}
+
+/* ****** HOME FOOTER 1 ******  */
+
+#footer-1 {
+  background-color: var(--bg-gradient-gray-white);
+  margin-top: 30px;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer .col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.logo-footer {
+  width: 100px;
+  cursor: pointer;
+  transition: transform 0.6s;
+  padding-bottom: 10px;
+}
+
+.logo-footer:hover {
+  transform: translateY(-7px);
+}
+
+footer h4 {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--fourth-color);
+}
+
+footer h5 {
+  font-size: 14px;
+  padding-bottom: 8px;
+  color: #565659;
+}
+
+footer p {
+  font-size: 12px;
+  margin: 0 0 8px 0;
+}
+
+footer a {
+  font-size: 12px;
+  color: #565659;
+  text-decoration: none;
+  margin-bottom: 8px;
+}
+
+footer .seguinos {
+  margin-top: 5px;
+}
+
+footer .seguinos i {
+  font-size: 30px;
+  color: var(--first-color);
+  padding-right: 5px;
+  padding-left: 5px;
+  cursor: pointer;
+}
+
+footer .seguinos i:hover,
+footer a:hover {
+  color: var(--fourth-color);
+  transition: all 0.12s ease-out;
+}
+
+
+/* ****** HOME FOOTER 2 ******  */
+#footer2 .copyright {
+  background-color: var(--fourth-color);
+  padding: 5px 20px 5px 20px;
+}
+
+#footer2 .copyright p {
+  width: 100%;
+  text-align: center;
+  font-size: 13px;
+}
 
 /*  ********** LIPOPLASER **********  */
 /*  ********** ********** **********  */
 
 .lipolaser-hero2 {
-  background: url(../images/lipolaser-hero.png);
+  background: url(../images/lipolaser-hero.webp);
   background-repeat: no-repeat;
   background-size: cover;
   height: 0.5vh;
@@ -893,7 +1080,7 @@ html {
 /*  ********** ******** ****** **********  */
 
 .limpieza-facial-hero {
-  background: url(../images/limpieza-facial-hero.png);
+  background: url(../images/limpieza-facial-hero.webp);
   background-repeat: no-repeat;
   background-size: cover; 
   height: 0.5vh;
@@ -994,7 +1181,7 @@ html {
 /* **********  ****** ********** ********** */
 
 .antiestres-hero {
-  background: url(../images/masaje-antiestres-hero-0.png);
+  background: url(../images/masaje-antiestres-hero-0.webp);
   background-repeat: no-repeat;
   background-size: cover; 
   color: var(--white-color) !important; 
@@ -1004,7 +1191,7 @@ html {
  }
 
  .antiestres-hero-abajo {
-  background: url(../images/masaje-antiestres-hero.png);
+  background: url(../images/masaje-antiestres-hero.webp);
   background-repeat: no-repeat;
   background-size: cover; 
   color: var(--white-color) !important; 
@@ -1071,7 +1258,7 @@ html {
 }
 
 .masaje-terapeutico-hero-fijo {
-  background: url(../images/masaje-terapeutico-hero-fijo.png);
+  background: url(../images/masaje-terapeutico-hero-fijo.webp);
   background-repeat: no-repeat;
   background-size: cover; 
   color: var(--dark-color);
@@ -1207,7 +1394,7 @@ justify-content: center;
  } 
 
  .nano-botox-hero {
-  background: url(../images/nano-botox-hero-andrea-rios.png);
+  background: url(../images/nano-botox-hero-andrea-rios.webp);
   background-repeat: no-repeat;
   background-size: cover; 
   color: var(--dark-color);
@@ -1245,7 +1432,7 @@ justify-content: center;
 }
 
 .reiki-hero-fijo {
-  background: url(../images/reiki-hero-fijo.png);
+  background: url(../images/reiki-hero-fijo.webp);
   background-repeat: no-repeat;
   background-size: cover; 
   color: var(--dark-color);
@@ -1255,7 +1442,7 @@ justify-content: center;
 }
 
 .reiki-hero-fijo-2 {
-  background: url(../images/reiki-hero-fija-media.png);
+  background: url(../images/reiki-hero-fija-media.webp);
   background-repeat: no-repeat;
   background-size: cover; 
   color: var(--dark-color);
@@ -1364,7 +1551,7 @@ justify-content: center;
  } 
 
  .peeling-hero-fijo {
-  background: url(../images/peeling-hero-1.png);
+  background: url(../images/peeling-hero-1.webp);
   background-repeat: no-repeat;
   background-size: cover; 
   color: var(--dark-color);
@@ -1410,7 +1597,7 @@ justify-content: center;
 /* ********** *************** ******** ********** */
 
 .radiofrecuencia-corporal-hero {
-  background: url(../images/radiofrecuencia-corporal-hero.png);
+  background: url(../images/radiofrecuencia-corporal-hero.webp);
   background-repeat: no-repeat;
   background-size: cover; 
   color: var(--dark-color);
@@ -1486,7 +1673,7 @@ justify-content: center;
 /* ********** *************** ****** ********** */
 
 .radiofrecuencia-facial-hero {
-  background: url(../images/radiofrecuencia-facial-hero-1.png);
+  background: url(../images/radiofrecuencia-facial-hero-1.webp);
   background-repeat: no-repeat;
   background-size: cover; 
   color: var(--dark-color);
@@ -1570,7 +1757,7 @@ justify-content: center;
 }
 
 .reflexologia-hero {
-  background: url(../images/reflexologia-andrea-rios-hero-1.png);
+  background: url(../images/reflexologia-andrea-rios-hero-1.webp);
   background-repeat: no-repeat;
   background-size: cover; 
   color: var(--dark-color);
@@ -1625,12 +1812,58 @@ justify-content: center;
   padding-bottom: 10px;
 }
 
+.tarjetas-raflexologia-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 40px;
+  font-family: "Raleway";
+}
+
+.tarjetas-raflexologia-list div {
+  font-family: "Raleway";
+  background: var(--fourth-color);
+  padding: 10px;
+  border-radius: 30px 30px 1px 30px;
+  transition: background 0.75s, transform 0.75s;
+  color: var(--white-color);
+}
+
+.tarjetas-raflexologia-list div:hover {
+  background: var(--first-color);
+  transform: translateY(-20px);
+}
+
+.tarjetas-raflexologia-list div h3 {
+  font-family: "Raleway";
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.tarjetas-raflexologia-list div p {
+  font-family: "Raleway";
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  text-align:start;
+}
+
+.tarjetas-raflexologia-list div a {
+  text-decoration: none;
+  color: var(--white-color);
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-block;
+}
+
 
 /* ********** SOBRE ANDREA ********** */
 /* ********** ***** ****** ********** */
 
 .sobre-andrea-hero {
-  background: url(../images/sobre-andrea-hero.png);
+  background: url(../images/sobre-andrea-hero.webp);
   background-repeat: no-repeat;
   background-size: cover; 
   color: var(--dark-color);
@@ -1739,16 +1972,16 @@ justify-content: center;
   display: block;
 }
 
-/* ---------- SERVICES  ---------- */
-/* ---------- --------- ---------- */
+/* ---------- PORQUE ELEGIRME  ---------- */
+/* ---------- ------ -------- ---------- */
 
 
-#services {
+#porque-elegirme {
   padding-top: 20px;
   padding-bottom: 50px;
 }
 
-.sub-title-services {
+.sub-title-elegirme {
   font-size: 20px;
   font-weight: 300;
   /*line-height: 55px;*/
@@ -1756,7 +1989,7 @@ justify-content: center;
   color: var(--dark-color);
 }
 
-.services-list {
+.porque-elegirme-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 40px;
@@ -1764,7 +1997,7 @@ justify-content: center;
   font-family: "Raleway";
 }
 
-.services-list div {
+.porque-elegirme-list div {
   font-family: "Raleway";
   background: var(--first-color);
   padding: 30px;
@@ -1773,20 +2006,24 @@ justify-content: center;
   color: var(--white-color);
 }
 
-.services-list div:hover {
+.porque-elegirme-list div:hover {
   background: #585858;
   transform: translateY(-20px);
 }
 
-.services-list div h3 {
+.porque-elegirme-list ul {
+  padding-inline-start: 20px;
+}
+
+.porque-elegirme-list div h3 {
   font-family: "Raleway";
-  font-size: 22px;
+  font-size: 21px;
   font-weight: 500;
   margin-bottom: 25px;
   margin-top: 25px;
 }
 
-.services-list div p {
+.porque-elegirme-list div p {
   font-family: "Raleway";
   font-size: 14px;
   font-weight: 500;
@@ -1794,7 +2031,7 @@ justify-content: center;
   text-align:start;
 }
 
-.services-list div a {
+.porque-elegirme-list div a {
   text-decoration: none;
   color: var(--white-color);
   font-size: 12px;
@@ -1808,15 +2045,15 @@ justify-content: center;
   font-size: 40px;
 }
 
-/* ---------- PORTFOLIO ---------- */
+/* ---------- SERVICIOS ---------- */
 /* ---------- ---------- ---------- */
 
 
-#portfolio {
+#servicios-destacados {
   padding: 5px 0;
 }
 
-.sub-title-portfolio {
+.sub-title-servicios {
   font-size: 20px;
   font-weight: 300;
   line-height: 55px;
@@ -1824,8 +2061,7 @@ justify-content: center;
   color: var(--dark-color);
 }
 
-
-.portfolio-list {
+.servicios-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   grid-gap: 30px;
@@ -1834,13 +2070,13 @@ justify-content: center;
   font-family: "Raleway";
 }
 
-.portfolio {
+.servicios {
   border-radius: 30px;
   position: relative;
   overflow: hidden;
 }
 
-.portfolio img {
+.servicios img {
   width: 100%;
   border-radius: 30px;
   display: block;
@@ -1865,7 +2101,7 @@ justify-content: center;
   flex-direction: column;
   padding: 0 15px;
   text-align:left;
-  font-size: 16px;
+  font-size: 14px;
   transition: height 0.5s;
 }
 
@@ -1873,27 +2109,22 @@ justify-content: center;
   margin-top: 180px;
   font-weight: 500;
   margin-bottom: 8px;
-  font-size: 22px;
+  font-size: 25px;
 }
 
-.portfolio:hover img {
+.servicios:hover img {
   transform: scale(1.1);
 }
 
-.portfolio:hover .layer {
+.servicios:hover .layer {
   height: 100%;
 }
 
 /* **********  TATTOO REMOVAL ********** */
 /* **********  ************ ********** */
 
-#reflexologia-container {
-  padding-top: 20px;
-  padding-bottom: 5px;
-}
-
-.tatoo-hero {
-  background: url(../images/andrea-rios-tattoo-parallax.png);
+.tattoo-hero {
+  background: url(../images/andrea-rios-tattoo-parallax.webp);
   background-repeat: no-repeat;
   background-size: cover; 
   color: var(--dark-color);
@@ -1902,39 +2133,21 @@ justify-content: center;
   background-position: center;
 }
 
-.primera.img-fluid {
-  display: flex;
-  justify-content: center;
-  width: 85%;
-  height: auto;
-  align-items: center;
-  padding: 20px 0 30px 50px;
-}
-
-.segunda.img-fluid {
-  display: flex;
-  justify-content: center;
-  width: 85%;
-  height: auto;
-  align-items: center;
-  padding: 20px 50px 30px 20px;
-}
-
-#reflexologia-container .p-segunda {
+/*#reflexologia-container .p-segunda {
   display: block;
   margin-block-start: 0;
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 16px;
-}
+}*/
 
-#reflexologiaBannerFijo {
+#eliminacionTatuajeFijo {
   background: #f1f3f3;
   padding-top: 25px;
   padding-bottom: 20px;
 }
 
-.img-reflexologia {
+.img-eliminacion-tatuaje {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -1943,18 +2156,101 @@ justify-content: center;
   margin-bottom: 10px;
 }
 
-.img-reflexologia .img-fluid {
+.img-eliminacion-tatuaje .img-fluid {
   padding-top: 20px;
   padding-bottom: 10px;
+}
+
+#tatuajes-card {
+  padding-top: 0;
+  padding-bottom: 30px;
+}
+
+.tarjetas-tatuajes-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 40px;
+  font-family: "Raleway";
+}
+
+.tarjetas-tatuajes-list div {
+  font-family: "Raleway";
+  background: var(--fourth-color);
+  padding: 10px;
+  border-radius: 30px 30px 1px 30px;
+  transition: background 0.75s, transform 0.75s;
+  color: var(--white-color);
+}
+
+.tarjetas-tatuajes-list div:hover {
+  background: var(--first-color);
+  transform: translateY(-20px);
+}
+
+.tarjetas-tatuajes-list div h3 {
+  font-family: "Raleway";
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.tarjetas-tatuajes-list div p {
+  font-family: "Raleway";
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  text-align:start;
+}
+
+.tarjetas-tatuajes-list div a {
+  text-decoration: none;
+  color: var(--white-color);
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+
+/* ****** TATTOO REMOVAL BANNER PARALLAX ******  */
+.section-p1 {
+  padding: 20px 0px;
+}
+
+#banner-parallax-tatuaje {
+  background-image: url("../images/andrea-rios-tattoo-removal.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+  min-height: 500px;
+  width: 100%;
+  background-position: top 70% center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; 
+  padding-left: 20px;
+}
+
+#banner-parallax-tatuaje h1 {
+  font-weight: 500;
+  font-size: 18px;
+  color: #565659;
+  margin-top: 20px;
+}
+
+#banner-parallax-tatuaje h4 {
+  color: var(--bs-heading-color,inherit);
 }
 
 
 /* **********  TERAPIA LED ********** */
 /* **********  ******* *** ********** */
 
-
 .terapia-led-fijo {
-  background: url(../images/terapia-led-fijo.png);
+  background: url(../images/terapia-led-fijo.webp);
   background-repeat: no-repeat;
   background-size: cover; 
   color: var(--dark-color);
@@ -1980,7 +2276,7 @@ justify-content: center;
 /* **********  *************** ********** */
 
 .ultracavitacion-hero {
-  background: url(../images/ultracavitacion-hero.png);
+  background: url(../images/ultracavitacion-hero.webp);
   background-repeat: no-repeat;
   background-size: cover; 
   height: 0.5vh;
@@ -2005,7 +2301,7 @@ justify-content: center;
 .tarjetas-ultracavitacion-list div {
   font-family: "Raleway";
   background: var(--fourth-color);
-  padding: 30px;
+  padding: 20px;
   border-radius: 30px 30px 1px 30px;
   transition: background 0.75s, transform 0.75s;
   color: var(--white-color);
@@ -2045,9 +2341,14 @@ justify-content: center;
 
 .form-control {
   border-radius:12px;
-  font-size: 0.85rem;
+  font-size: 14px;
  }
- 
+ .vias-comunicacion h4 {
+  font-size: 20px;
+}
+.vias-comunicacion h5 {
+  font-size: 17px;
+}
  
  /* ********** FORMULARIO DE CONTACTO **********  */
  
@@ -2123,27 +2424,9 @@ justify-content: center;
     /*resize: vertical | horizontal | none | both*/
     resize:none;
     display:block;
-  margin-top: 1px;
-  margin-bottom: 5px;
- }
- 
- /* ********** FORMULARIOS DE LETS START: form-services ********** */
- 
- .form-lets-start {
-  font-size: 0.85rem;
- }
- 
- .form-lets-start-2 {
-  font-size: 0.85rem;
- }
- 
- .form-lets-start-3 {
-  font-size: 0.85rem;
- }
- 
- .form-lets-start-4 {
-  font-size: 0.85rem;
- }
+    margin-top: 1px;
+    margin-bottom: 5px;
+  }
 
 
 /* Las "media query" son característica de CSS. Permite crear e
@@ -2166,22 +2449,540 @@ justify-content: center;
   .nav-item:hover {
    background-color: transparent;
   }
-  .antiestres-hero {
+  .nav-link {
+    padding-top: 12px;
+    padding-left: 16px;
+    font-size: 22px;
+  }
+  .dropdown-menu {
+    --bs-dropdown-font-size: 22px;
+    padding-top: 12px;    
+  }
+  /* ** HOME ** */
+  #home-container-1 h4,
+  #home-container-2 h4 {
+    font-size: 24px;
+  }
+  #home-container-1 p,
+  #home-container-2 p {
+    font-size: 18px;
+  }
+  #home-container-1 a,
+  #home-container-2 a {
+    font-size: 16px;
+  }
+  #banner-parallax h4 {
+    font-size: 25px;
+  }
+  #banner-parallax p {
+    font-size: 20px;
+  }
+  #banner-parallax a {
+    font-size: 18px;
+  }
+  .home-subtitulo i {
+    font-size: 23px;
+  }
+  .cards {
+    width: 300px;
+    height: 95%;
+  }
+  .home-cards-content span{
+    font-size: 25px
+  }
+  .btn-primary {
+    --bs-btn-font-size: 18px;
+  }
+  .card-text {
+    font-size: 16px;
+    margin: 1em 0;
+  }
+  .calificaciones h5 {
+    font-size: 25px;
+  }
+  .calificaciones h4,
+  .card-rutina h5 {
+    font-size: 23px;
+  }
+  .calificaciones P {
+    font-size: 21px;
+  }
+  #home-rutina-facial i {
+    font-size: 18px;
+  }
+  .card-rutina p {
+    font-size: 18px;
+  }
+  #banner-depilacion-home h5 {
+    font-size: 25px;
+  }
+  #banner-depilacion-home p,
+  #banner-depilacion-home a {
+    font-size: 18px;
+  }  
+  .img-masoterapia-home {
+    width: 99%;
+    margin-left: 5px;
+    margin-top: 10px;
+  }
+  .img-lipolaser-home {
+    width: 99%;
+    margin-left: 5px;
+  }
+
+  /* ** BB GLOW ** */  
+  .bbglow-hero {
     height: 0.5vh;
+    min-height: 500px;
+  }
+  #bbGlow h3,
+  .ventosaterapia h5,
+  #cupping-hero-fijo-medio h5,
+  #depilacion-hero-fijo h5 {
+    font-size: 25px;
+  }
+  #bbGlow p,
+  .ventosaterapia p,
+  #depilacion-hero-fijo p {
+    font-size: 18px;
+  }
+  .btn-blanco {
+    --bs-btn-font-size: 18px;
+  }
+  #text-bbglow h4 {
+    font-size: 25px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  #text-bbglow p {
+    font-size: 18px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  #text-bbglow strong {
+    font-size: 18px;
+  }
+  #text-bbglow ul {
+    padding-left: 10px;
+    font-size: 18px;
+    margin: 0 0 0 20px;
+  }
+  #bbGlow-card .card-text {
+    font-size: 18px;
+  }
+
+  /* ** CUPPING ** */
+  .cupping-ventosaterapia-hero {
+    height: 60vh;
+  }
+  .cupping-hero-fijo-2 {
+    height: 0.5vh;
+    min-height: 300px;  
+  }
+  .cupping-ventosaterapia-hero p,
+  .tarjetas-cupping-ventosas-list ul,
+  .tarjetas-depilacion-list div ul {
+    font-size: 18px;
+  }
+  .tarjetas-cupping-ventosas-list div h3,
+  .tarjetas-depilacion-list div h3,
+  .cupping-ventosaterapia-hero h5 {
+    font-size: 26px;
+  }
+  .tarjetas-cupping-ventosas-list ul,
+  .tarjetas-depilacion-list div ul,
+  .implementacion-depilacion ul {
+    padding-left: 10px;
+    padding-bottom: 10px;
+  }
+  .cupping-ventosaterapia-hero h5,
+  .cupping-ventosaterapia-hero p,
+  .ventosaterapia h5,
+  .ventosaterapia p {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .ventosaterapia li {
+    font-size: 18px;
+    margin-left: 15px;
+    margin-right: 20px;
+  }
+
+   /* ** DEPILACIÓN DEFINITIVA ** */
+  #depilacion-info,
+  .depilacion-importante {
+    margin-right: 8px;
+    margin-left: 10px;
+  }
+  .texto-depilacion-hero-fijo {
+    margin-right: 5px;
+    margin-left: 15px;
+  }
+  #depilacion-info h5,
+  #depilacion-hero-fijo h5,
+  .depilacion-importante h5,
+  #dermaplaning h5,
+  #dermaplaningCirculos h4,
+  #texto-dermaplaning h4,
+  #drenaje-linfático-hero h4,
+  #drenaje-linfatico-card h3,
+  #limpiezafacialhero h4,
+  .limpiezaFacial h5,
+  #lipolaser-hero-image h4,
+  #lipolaser-info h5,
+  #antiestres h3,
+  #text-antiestres h4 {
+    font-size: 25px;
+  }
+  #depilacion-info p,
+  #depilacion-hero-fijo p,
+  .depilacion-importante p,
+  #dermaplaning p,
+  #dermaplaningCirculos p,
+  #texto-dermaplaning p,
+  #texto-dermaplaning i,
+  #container-con-texto p,
+  #container-con-texto ul,
+  #limpiezaFacialImportante i,
+  .error-404-hero,
+  #limpiezafacialhero p,
+  .limpiezaFacial p,
+  #lipolaser-hero-image p,
+  #lipolaser-info p,
+  #text-antiestres p {
+    font-size: 18px;
+  }
+  .depilacion-importante p {
+    margin-right: 20px;
+  }
+  .depilacion-hero-fijo {
+    height: 0.5vh;
+    min-height: 550px;   
+  }
+
+  /* ** DERMAPLANING ** */
+  .dermaplaning-hero {
+    height: 0.6vh;
+    min-height: 550px;
+  }
+  #dermaplaningCirculos p {
+    margin-left: 35px;
+    margin-right: 30px;
+  }
+  #texto-dermaplaning,
+  #dermaplaning h5,
+  #dermaplaning p {
+    margin-left: 15px;
+    margin-right: 20px;
+  }
+  #texto-dermaplaning i {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .importante-dermaplaning {
+
+  }
+
+  /* ** DRENAJE LINFÁTICO ** */
+  .drenaje-linfático-hero {
+    height: 0.6vh;
+    min-height: 600px;
+  }
+ 
+  #drenaje-linfático-hero h4 {
+    margin-left: 20px;
+    margin-right: 15px;
+  }
+  #drenaje-linfático-hero p,
+  #drenaje-linfatico-card ul {
+    font-size: 18px;
+  }
+  #drenaje-linfático-hero p,
+  #drenaje-linfático-hero .btn {
+    display: none;
+  }
+  .importante-drenaje .text-center,
+  .importante-drenaje i {
+    margin-left: 15px;
+    margin-right: 20px;
+  }
+  #container-con-texto h5 {
+    font-size: 23px;
+  }
+  .container-drenaje ul {
+    padding-left: 15px;
+  }
+  #drenaje-linfatico-card ul {
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+
+  /* ** LIMPIEZA FACIAL ** */
+  #limpiezafacialhero h4,
+  #limpiezafacialhero p,
+  .limpiezaFacial p {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  #limpiezaFacialImportante p {
+    margin-left: 35px;
+    margin-right: 15px;
+  }
+
+  #lipolaser-info P,
+  #lipolaser-info h5,
+  .antiestres-importante p {
+    margin-left: 20px;
+    margin-right: 15px;
+  }
+  .swiperlimpieza {
+    margin: 25px;
+    padding: 10px;
+  }
+  .titulo-detalle .titulo {
+    font-size: 18px;
+  }
+  .titulo-detalle .detalle,
+  .antiestres-importante p,
+  #text-antiestres li {
+    font-size: 18px;
+  }
+  .titulo-detalle a {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  /* ** LIPOLASER NO INVASIVO ** */
+ .containerr {
+  max-width: 1220px;
+  width: 85%;
+ }
+ .lipolaser-hero2 {
+  height: 0.5vh;
+  min-height: 500px;
+  background-position: 55%;
+  }
+ #lipolaser-hero-image h4,
+ #lipolaser-hero-image p {
+  margin: 20px;
+ }
+ .swiperlipolaser {
+  min-height: 50vh;
+  }
+ .profile-details .name {
+  font-size: 20px;
+ }
+ .profile-details .job {
+  font-size: 18px;
+  }
+
+  /* ** MASAJES ANTI-ESTRÉS ** */
+  .antiestres-hero {
+    height: 0.6vh;
     min-height: 300px;
   }
   .antiestres-hero-abajo {
     height: 0.5vh;
     min-height: 300px;
   }
+  #text-antiestres p,
+  #text-antiestres h4,
+  #antiestres h3 {
+    margin-right: 20px;
+    margin-left: 15px;
+  }
+  .card-anti-estres .card-text {
+    font-size: 20px;
+  }
+  #text-antiestres ul {
+    margin-left: 15px;
+  } 
+
+  /* *** MASAJES TERAPEUTICOS *** */
   .masaje-terapeutico-hero-fijo {
     height: 0.5vh;
     min-height: 500px;
   }
-  .bbglow-hero {
-    height: 0.5vh;
+  #masajes-terapeuticos-info h5,
+  #masaje-terapeutico h3 {
+    font-size: 25px;
+  }
+  #masajes-terapeuticos-info p,
+  #masajes-terapeuticos-info li,
+  #masaje-terapeutico i {
+    font-size: 18px;
+  }
+  #masajes-terapeuticos-info p,
+  #masajes-terapeuticos-info h5 {
+    margin-right: 20px;
+    margin-left: 15px;
+  }
+  #masaje-terapeutico ul {
+    padding-left: 15px;
+    margin-bottom: 20px;
+  }
+  /* *** NANOBOTOX *** */
+  .nano-botox-hero {
     min-height: 500px;
   }
+  .nanobotox-texto-hero h3 {
+    margin-top: 70px;
+  }
+  .nanobotox-texto-hero p {
+    margin-top: 120px;
+  }
+  #nanoBotox h3,
+  #nanoBotox p,
+  #nanoBotox .btn-primary {
+    margin-right: 20px;
+    margin-left: 20px
+  }
+  #textoNanoBotox {
+    padding: 20px;
+  }
+  #textoNanoBotox h5,
+  #nanoBotox h3 {
+    font-size: 24px;
+  }
+  #textoNanoBotox p,
+  #textoNanoBotox li,
+  #nanoBotox p {
+    font-size: 18px;
+  }
+  
+  /* *** PEELING *** */
+  #peeling-fijo h4,
+  .card-peeling h5,
+  #beneficios-peeling h4 {
+    font-size: 24px;
+  }
+  #peeling-fijo p,
+  .card-peeling p, 
+  #peeling-tipos p,
+  #beneficios-peeling i {
+    font-size: 18px;
+  }
+  #peeling-fijo h4,
+  #peeling-fijo p,
+  #peeling-tipos p {
+    margin-right: 20px;
+    margin-left: 20px
+  }
+  .ul-beneficios-dos,
+  .ul-beneficios-uno {
+    margin-left: 10px;
+    margin-right: 20px;
+    padding-left: 20px;
+    padding-right: 15px;
+  }
+  #importante-peeling p {
+    margin-right: 25px;
+    margin-left: 25px;
+    padding-left: 10px;
+  }
+  
+  /* *** RADIOFRECUENCIA CORPORAL *** */
+   /* *** RADIOFRECUENCIA FACIAL *** */
+  .radiofrecuencia-corporal-hero {
+    min-height: 500px;  
+  }
+  .radiofrecuencia-facial-hero {
+    min-height: 500px;
+    background-position: 51%;
+  }
+  #radiofrecuencia h4,
+  #radiofrecuenciafacial h4,
+  #radio-cor-container-1 h5,
+  #radio-cor-container-2 h5,
+  #radio-facial-container-1 h5,
+  .tarjetas-radiofrecuencia-list div h3,
+  .tarjetas-radiofrecuencia-facial-list div h3 {
+    font-size: 24px;
+  }
+  #radiofrecuencia p,
+  #radiofrecuenciafacial p,
+  #radio-cor-container-1 p,
+  #radio-facial-container-1 p,
+  #radio-cor-container-2 p,
+  #radio-cor-container-1 ul,
+  #radio-cor-container-2 ul,
+  #radio-facial-container-1 ul,
+  .tarjetas-radiofrecuencia-facial-list div i,
+  #importante-radiofrecuencia p  {
+    font-size: 18px;
+  }
+  #radio-cor-container-1 h5,
+  #radiofrecuenciafacial h4,
+  #radiofrecuenciafacial p,
+  #radio-facial-container-1 h5,
+  #radio-facial-container-1 p,
+  #radio-cor-container-2 h5,
+  #radio-cor-container-1 p,
+  #radio-cor-container-2 p {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  #radiofrecuencia-corporal-card {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .tarjetas-radiofrecuencia-list ul,
+  .tarjetas-radiofrecuencia-facial-list ul,
+  #radio-facial-container-1 ul {
+    padding: 0px 30px 0px 20px;
+  }
+  .grafico-radiofrecuencia {
+   padding-right: 20px;
+  }
+  #radiofrecuenciafacial h4 {
+    margin-bottom: 15px;
+  }
+  #radiofrecuenciafacial p {
+    margin-bottom: 70px;
+  }
+  #radiofrecuenciafacial .btn-primary {
+    margin-bottom: 90px;
+  }
+  #importante-radiofrecuencia p {
+    margin-right: 25px;
+    margin-left: 25px;
+    padding-left: 10px;
+  }
+
+  /* *** REFLEXOLOGÍA *** */
+  #reflexologia h4,
+  #reflexologia-container h5,
+  .tarjetas-raflexologia-list div h3,
+  #reiki-tarjetas h3 {
+    font-size: 24px;
+  }
+  #reflexologia P,
+  #reflexologia-container p,
+  #reflexologia-container ul,
+  .tarjetas-raflexologia-list i,
+  #importante-reflexologia p,
+  #reiki-tarjetas i {
+    font-size: 18px;
+  }
+  #reflexologia-container p {
+    padding-left: 10px;
+  }
+  .tarjetas-raflexologia-list ul {
+    margin-right: 20px;
+    margin-left: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+  }
+  .tarjetas-raflexologia-list .fa-solid {
+    font-size: 40px;
+  }
+  #importante-reflexologia p {
+    margin-right: 25px;
+    margin-left: 20px;
+    padding-left: 10px;
+  }
+  
+
+  /* *** REIKI *** */
   .reiki-hero-fijo-2 {
     height: 0.5vh;
     min-height: 500px;
@@ -2189,7 +2990,229 @@ justify-content: center;
   .reiki-hero-fijo {
     height: 0.5vh;
     min-height: 550px;
-}
+    background-position: 48%;
+  }
+  #reiki-info h5,
+  .reiki-hero-fijo h5 {
+    font-size: 24px;
+  }
+  #reiki-info p,
+  #reiki-importante h5,
+  .reiki-hero-fijo i {
+    font-size: 18px;
+  }
+  #reiki-info h5,
+  #reiki-info p {
+    margin-right: 25px;
+    margin-left: 20px;
+    padding-left: 10px;
+  }
+  #reiki-importante h5,
+  #reiki-hero-fijo h5 {
+    margin-right: 25px;
+    margin-left: 20px;
+  }
+  .tarjetas-reiki-list h3 {
+    padding-top: 30px;
+  }
+  .tarjetas-reiki-list div ul {
+    margin: 20px 25px 40px 15px;
+    padding-left: 16px;
+  }
+  .reiki-hero-fijo ul{
+    padding-left: 15px;
+  }
+
+
+  /* *** TATUAJE *** */
+  #banner-parallax-tatuaje {
+    height: 0.6vh;
+    min-height: 600px;   
+    padding-left: 10px;
+  }
+  #banner-parallax {
+    height: 70vh;
+    min-height: 500px;
+  }
+  #tattoo-container-1 h5,
+  #banner-parallax-tatuaje h1,
+  .tarjetas-tatuajes-list div h3 {
+    font-size: 24px;
+  }
+  #tattoo-container-1 p,
+  .tarjetas-tatuajes-list div ul {
+    font-size: 18px;
+  }
+  #tattoo-container-1 h5,
+  #tattoo-container-1 p {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .tarjetas-tatuajes-list div ul {
+    margin: 20px 25px 40px 15px;
+    padding-left: 16px;
+  }
+  .tarjetas-tatuajes-list .fa-solid {
+    font-size: 40px;
+  }
+
+  /* *** TERAPIA LED *** */
+  .terapia-led-fijo {
+    min-height: 500px;
+    background-position: 45%;
+  }
+  .terapiaLedFijo h4,
+  #terapiaLed-info h5 {
+    font-size: 24px;
+  }
+  .terapiaLedFijo P,
+  #terapiaLed-info p,
+  #terapiaLed-abajo-fijo p {
+    font-size: 18px;
+  }
+  #terapiaLed-abajo-fijo h5 {
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+  }
+  .terapiaLedFijo h4,
+  .terapiaLedFijo p,
+  #terapiaLed-info h5,
+  #terapiaLed-info p,
+  #terapiaLed-abajo-fijo h5,
+  #terapiaLed-abajo-fijo p,
+  #terapiaLed-abajo-fijo a {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  #terapiaLed-abajo-fijo a {
+    margin-top: 20px;
+  }
+
+  /* *** DERMAPEN *** */
+  .dermapen-hero-fijo {
+    min-height: 600px;
+    background-position: 48%; 
+  }
+  #dermapen-info h5,
+  #dermapen-fijo h5 {
+    font-size: 24px;
+  }
+  #dermapen-info p,
+  #dermapen-fijo i {
+    font-size: 18px;
+  }
+  #dermapen-info h5,
+  #dermapen-info p,
+  #dermapen-fijo h5,
+  #dermapen-fijo a {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  /* *** ULTRACAVITACIÓN *** */
+  .ultracavitacion-hero {
+    height: 0.5vh;
+    min-height: 500px;
+    background-position: 50%;
+  }
+  #ultracavitacion-hero-image h4,
+  #ultracavitacion-container h5,
+  .tarjetas-ultracavitacion-list div h3{
+    font-size: 24px;
+  }
+  #ultracavitacion-hero-image p,
+  #ultracavitacion-container p,
+  .tarjetas-ultracavitacion-list div i {
+    font-size: 18px;
+  }
+  #ultracavitacion-hero-image h4,
+  #ultracavitacion-hero-image p,
+  #ultracavitacion-hero-image a,
+  #ultracavitacion-container h5,
+  #ultracavitacion-container p {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .tarjetas-ultracavitacion-list ul,
+  .tarjetas-ultracavitacion-list h5 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  /* *** CONTACTO *** */
+  .vias-comunicacion h4 {
+    font-size: 24px;
+  }
+  .vias-comunicacion h5 {
+    font-size: 20px;
+  }
+  .form-control {
+    font-size: 20px;
+  }
+  .contacto-hero h5 {
+    font-size: 24px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+
+  /* *** SOBRE ANDREA *** */
+  .sobre-andrea-texto p {
+    font-size: 18px;
+  }
+  .sub-title-elegirme {
+    font-size: 25px;
+  }
+  .porque-elegirme-list div h3 {
+    font-size: 25px;
+  }
+  .porque-elegirme-list ul {
+    font-size: 18px;
+  }
+  .tab-titles p {
+    font-size: 23px;
+  }
+  #experience ul li,
+  #skills ul li {  
+    font-size: 18px;
+  }
+  #experience ul li small {
+    font-size: 18px;
+  }
+  #servicios-destacados h2 {
+    font-size: 25px;
+  }
+  .layer {
+    /*Datos para la capa transparente. Para bajar las letras ubicamos el display: */
+    padding: 0 15px;
+    font-size: 18px;
+    transition: height 0.5s;
+  }
+  
+  /* *** FOOTER *** */
+  footer {
+    justify-content: flex-start;
+  }
+
+  footer .col {
+    margin: 20px 10px;
+    padding: 0 5px;
+  }
+  .copyright small {
+    font-size: 14px;
+  }
+  #footer-1 h5 {
+    font-size: 21px;
+  }
+  #footer-1 h4 {
+    font-size: 18px;
+  }
+  #footer-1 a {
+    font-size: 15px;
+  }
+  #footer-1 .seguinos i {
+    font-size: 25px;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -2212,6 +3235,29 @@ justify-content: center;
   }
   .bbglow-hero {
     height: 0.5vh;
+    min-height: 500px;
+  }
+  .reiki-hero-fijo-2 {
+    height: 0.5vh;
+    min-height: 500px;
+  }
+  .reiki-hero-fijo {
+    height: 0.5vh;
+    min-height: 550px;
+  }
+  .cupping-ventosaterapia-hero {
+    min-height: 400px;
+  }
+  .cupping-hero-fijo-2 {
+    height: 0.5vh;
+    min-height: 300px;  
+  }
+  #banner-parallax-tatuaje {
+    height: 0.6vh;
+    min-height: 600px;   
+  }
+  #banner-parallax {
+    height: 70vh;
     min-height: 500px;
   }
 }

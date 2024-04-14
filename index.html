@@ -8,66 +8,38 @@
       <meta 
         name="description" 
         content="Andrea Rios | Masoterapia + Estética  | Más de 20 años de experiencia dedicada a la salud y el bienestar en Rosario de la Frontera (Salta)"/>
-
       <!-- Cdn de BootStrap -->
       <link  
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" 
         rel="stylesheet" 
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"/>
-
       <link rel="stylesheet"
-       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"/>
-      
+       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"/>      
       <!-- Google Fonts | Raleway -->
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,700;1,200;1,300;1,400;1,700&display=swap" rel="stylesheet">
-
       <!-- Link Swiper's CSS -->
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
-   
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>   
       <!-- FONTAWESOME  -->
       <script  
         src="https://kit.fontawesome.com/0591dd6427.js"
-        crossorigin="anonymous"></script>
-    
+        crossorigin="anonymous"></script>    
       <!-- Stylesheet propia almacenada en Visual Studio -->    
       <link rel="stylesheet" href="/stylesheets/style.css">
-
     </head>
-
-
-    <!--Aclaraciones de comandos de Bootstrap. En bootstrap colocamos las clases:
-    - "fixed-top" para que la barra de navegación quede FIJA.
-    - "navbar-dark" y "bg-dark" para darle un color oscuro al backgroung de la barra de navegación. 
-    - "container-fluid" Todo el contenido va dentro CONTAINER con la clse fluid, que abarque todo
-      el ancho del viewport y se modifique acorde a cada dispositivo y su resolución de pantalla.
-    - "text-center" para que el contenido esté centrado respecto a viewport.
-    - "col-lg-3" Es la cantidad de columnas en el tamaño lg de la grilla de bootstrap. 
-      Acá tendremos un elemento de 3 columnas de las 12 que hay diaponibles.
-    - "offset-lg-2" La columna estará desplazada 2 columnas hacia la derecha
-    - "align-items-center" alinea en el eje vertical los hijos del elemento de forma centrada.
-    -  "py-3" La propiedad "p" para la clase "padding". La propiedad "y" setea los lados (top y bottom). 
-      Y el tamaño (size) va de 0 a 5 más "auto". Acá definimos un padding en top y bottom de 3.
-    - "data-bs-toggle" le indica a Bootstrap que deberá abrir un modal (ventana emergente)
-    - "data-bs-target" define el elemento que contiene al modal. --> 
-
     <body>
       <!-- INICIO NAVBAR -->
       <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
         <div class="container-fluid">
-        <a class="navbar-brand" href="/"><img src="/images/logo-andrea-rios.png"
-        alt="AndreaRios Masoterapia + Estética"></a>
-    
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+        <a class="navbar-brand" href="/"><img src="/images/logo-andrea-rios.webp"
+        alt="Logo de AndreaRios Masoterapia + Estética"></a>   
+        <button 
+          class="navbar-toggler" type="button" data-bs-toggle="collapse" 
           data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" 
           aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
-        </button>
-    
-        <!-- En la ul class de abajo: para colocar en el margen derecho los botones del navbar, 
-        damos un espacio en el margen-start(ms), desde el tamaño de la "media query large"(lg)-->
-        
+        </button>        
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ms-lg-auto">
             <li class="nav-item dropdown">
@@ -119,78 +91,65 @@
         </div>
         </div>
       </nav>
-      <!-- FIN NAVBAR -->
-       
-      <main class="main bg-gradient-gray-white">
-        
+      <!-- FIN NAVBAR -->  
+           
+      <main class="main bg-gradient-gray-white">        
         <!-- INICIO HOME Hero image -->
         <section id="HomeCarousel">
           <div id="carouselHomeCaptions" class="carousel slide pb-2" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-      
+            <div class="carousel-indicators">      
               <button type="button" data-bs-target="#carouselHomeCaptions"
-                data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      
+                data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>      
               <button type="button" data-bs-target="#carouselHomeCaptions"
-                data-bs-slide-to="1" aria-label="Slide 2"></button>
-      
+                data-bs-slide-to="1" aria-label="Slide 2"></button>      
               <button type="button" data-bs-target="#carouselHomeCaptions"
                 data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-      
+            </div>      
             <div class="carousel-inner">
               <div class="carousel-item active" data-interval="1000">
-                <img src="/images/andrea-hero-1.png" class="d-block w-100" alt="andrea-hero-1"/>
-              </div>
-      
+                <img src="/images/andrea-hero-1.webp" class="d-block w-100" alt="andrea-hero-1"/>
+              </div>      
               <div class="carousel-item" data-interval="1000">
-                <img src="/images/andrea-hero-2.png" class="d-block w-100" alt="andrea-hero-2"/>
-              </div>
-              
+                <img src="/images/andrea-hero-2.webp" class="d-block w-100" alt="andrea-hero-2"/>
+              </div>              
               <div class="carousel-item" data-interval="1000">
-                <img src="/images/andrea-hero-3.png" class="d-block w-100" alt="andrea-hero-3"/>
+                <img src="/images/andrea-hero-3.webp" class="d-block w-100" alt="andrea-hero-3"/>
               </div>
-            </div>
-      
+            </div>      
             <button class="carousel-control-prev" type="button"
               data-bs-target="#carouselHomeCaptions" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
-            </button>
-      
+            </button>      
             <button class="carousel-control-next" type="button"
               data-bs-target="#carouselHomeCaptions" data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
-            </button>
-      
+            </button>      
           </div>
         </section>
         <!-- FIN HOME hero image-->
       
         <!-- INICIO HOME CONTAINER 1 -->
         <article class="container">
-          <section id="Home Container" class="row align-items-center px-3 pt-5 pb-4">
-      
-            <article class="col-12 col-lg-5 align-items-center pe-0">
-              <h4>¿Querés eliminar adiposidad y celulitis?</h4>
-              <p>Combinando tecnologías de punta y técnicas de masaje manual es
-                posible trabajar sobre todas las zonas para:
+          <section id="home-container-1" class="row align-items-center px-3 pt-5 pb-4">      
+            <article class="col-12 col-lg-5 align-items-center">
+              <h4>¿Tenés grasa corporal y celulitis?</h4>
+              <p>REDUCIR adiposidad, ESCULPIR el cuerpo y ELIMINAR celulitis en 5 semanas es posible con:
                 <br />
-                <br />- REDUCIR adiposidad,
-                <br />- ESCULPIR el cuerpo y
-                <br />- ELIMINAR celulitis en pocas semanas.
+                <br />- LIPOLASER NO INVASIVO
+                <br />- RADIOFRECUENCIA CORPORAL
+                <br />- ULTRACAVITACIÓN
+                <br />- DRENAJE LINFÁTICO MANUAL
                 <br />
                 <br />
-                <small>LIPOLASER NO INVASIVO - RADIOFRECUENCIA - ULTRACAVITACIÓN
-                </small>
               </p>
-              <a class="btn btn-primary btn-lg rounded-5" href="/contacto.html" role="button">AGENDÁ TU SESIÓN HOY!</a>
+              <a class="btn btn-primary btn-lg rounded-5" href="/contacto.html" role="button">AGENDÁ TU SESIÓN!</a>
             </article>
       
-            <article class="col-12 col-lg-7 pt-5 pb-5 me-0">
-              <img class="img-fluid pt-4 ps-2 ms-4" src="/images/andrea-rios-lipolaser-home.png"
-              width="80%" alt="Imágen de laptop y tablet con el sitio web de andrea rios - lipolaser"/>
+            <article class="col-12 col-lg-7 pt-0 pb-5 me-0">
+              <img class="img-fluid img-lipolaser-home" src="/images/andrea-rios-lipolaser-home-1.png"
+              width="75%" alt="Imágen de una mujers estilizada con las piernas cruzadas antes del Lipolaser No Invasivo"/>
             </article>
       
           </section>
@@ -202,11 +161,12 @@
           <div class="container-fluid">
             <div class="row align-items-center">
               <div class="col-lg-4 offset-lg-3">
-                <h4>Tattoo removal</h4>
-                <h1><strong>ELIMINACIÓN</strong>
-                <br>de TATUAJES
-                <br>con tecnología
-                <br> <strong>LASER</strong></h1>
+                <h4>TATTOO
+                <br> REMOVAL</h4>
+                <br>
+                <p>ELIMINACIÓN de
+                <br>TATUAJES con
+                <br>tecnología LASER</p>
                 <br>
                 <a class="btn btn-primary btn-lg rounded-5" href="/tattooRemoval.html" role="button">CONOCÉ MÁS!</a>
               </div>
@@ -217,13 +177,13 @@
 
         <!-- INICIO HOME CONTAINER 2 -->
         <article class="container">
-          <section id="Home Container" class="row align-items-center px-3 pt-5">
+          <section id="home-container-2" class="row align-items-center">
                
-            <article class="col-12 col-lg-7 ps-5 pb-5 pt-1">
-              <img class="img-fluid" src="/images/andrea-rios-masoterapia-home.png" width="100%" alt="Imágen de computadora personal y celular con sitio web de andrea rios - masoterapia"/>
-            </article>
+            <article class="col-12 col-lg-7 pt-2">
+              <img class="img-fluid img-masoterapia-home" src="/images/andrea-rios-masoterapia-home-0.png" width="100%" alt="Hombre y mujer recostados antes de un masaje terapéutico"/>
+            </article> 
 
-            <article class="col-12 col-lg-5 order-lg-1 pt-5">
+            <article class="col-12 col-lg-5 order-lg-1 px-4 pt-4">
               <h4>Recuperá el bienestar con Masoterapia</h4> <br />
               <p>Andrea Rios posee más de 20 años de experiencia implementando técnicas de
                 MASOTERAPIA complementadas con aparatología para:
@@ -235,7 +195,7 @@
                 - Mejorar la función del sistema inmunitario.<br />
                 <br />
               </p>
-              <a class="btn btn-primary btn-lg rounded-5" href="/contacto.html" role="button">AGENDÁ TU SESIÓN HOY!</a>
+              <a class="btn btn-primary btn-lg rounded-5" href="/contacto.html" role="button">AGENDÁ TU SESIÓN!</a>
               <br>
               <br>
               <br>
@@ -245,9 +205,9 @@
         </article>
         <!-- FIN HOME CONTAINER 2 -->
       
-        <div class="text-center py-1">
+        <div class="text-center home-subtitulo py-1">
           <br>
-          <p><h5><i>Servicios destacados de Andrea Rios Masoterapia + Estética.</i></h5></p>
+          <h5><i>Servicios destacados</i></h5>
         </div>
       
         <!-- INICIO HOME CARDS SLIDER SERVICIOS -->
@@ -257,9 +217,9 @@
       
               <div class="cards swiper-slide 1">
                 <div class="cards-image">
-                  <img src="images/servicios-1-bb-glow.png" alt="Rostro de mujer con tratamiento bb Glow"/>
+                  <img src="images/servicios-1-bb-glow.webp" alt="Rostro de mujer con tratamiento bb Glow"/>
                 </div>
-                <div class="cards-content">
+                <div class="cards-content home-cards-content">
                   <span class="cards-title">BB Glow</span>
                   <p class="card-text">La última tendencia mundial en estética facial. Con componentes cosméticos que duran hasta un año.
                     <strong>Efecto piel de porcelana!</strong>
@@ -271,7 +231,7 @@
       
               <div class="cards swiper-slide 2">
                 <div class="cards-image">
-                  <img src="images/servicios-2-lipolaser-no-invasivo.png" alt="Abdomen de mujer con cabezales de Lipolaser no invasivo"/>
+                  <img src="images/servicios-2-lipolaser-no-invasivo.webp" alt="Abdomen de mujer con cabezales de Lipolaser no invasivo"/>
                 </div>
                 <div class="cards-content">
                   <span class="cards-title">Lipolaser NO invasivo</span>
@@ -283,7 +243,7 @@
       
               <div class="cards swiper-slide 3">
                 <div class="cards-image">
-                  <img src="images/servicios-3-dermapen.png" alt="Rostro de mujer con dispositivo dermapen Dr. Pen"/>
+                  <img src="images/servicios-3-dermapen.webp" alt="Rostro de mujer con dispositivo dermapen Dr. Pen"/>
                 </div>
                 <div class="cards-content">
                   <span class="cards-title">Tratamiento Antiaging</span>
@@ -296,12 +256,12 @@
       
               <div class="cards swiper-slide 4">
                 <div class="cards-image">
-                  <img src="images/servicios-4-depilacion-definitiva-laser.png" alt="Piernas de mujer sin vellos por la depilacion definitiva laser"/>
+                  <img src="images/servicios-4-depilacion-definitiva-laser.webp" alt="Piernas de mujer sin vellos por la depilacion definitiva laser"/>
                 </div>
                 <div class="cards-content">
                   <span class="cards-title">Depilación Definitiva</span>
                   <p class="card-text">Eliminá definitivamente el vello facial y
-                    corporal en pocos meses. Sesiones exclusivas para #ellas y #ellos.
+                    corporal en pocos meses. Sesiones para #ellas y #ellos.
                     Materiales 100% descartables.</p>
                   <a class="card-btn btn btn-primary btn-md rounded-5" href="/depilacionDefinitiva.html" role="button">CONOCE MÁS...</a>
                 </div>
@@ -310,7 +270,7 @@
       
               <div class="cards swiper-slide 5">
                 <div class="cards-image">
-                  <img src="images/servicios-5-radiofrecuencia.png" alt="Rostro de mujer con dispositivo de radiofrecuencia facial"/>
+                  <img src="images/servicios-5-radiofrecuencia.webp" alt="Rostro de mujer con dispositivo de radiofrecuencia facial"/>
                 </div>
                 <div class="cards-content">
                   <span class="cards-title">Radiofrecuencia Facial</span>
@@ -322,7 +282,7 @@
       
               <div class="cards swiper-slide 6">
                 <div class="cards-image">
-                  <img src="images/servicios-6-piedras-calientes.png" alt="Espalda de hombre con piedras volcánicas para masaje con piedras calientes (hot stones massage) "/>
+                  <img src="images/servicios-6-piedras-calientes.webp" alt="Espalda de hombre con piedras volcánicas para masaje con piedras calientes (hot stones massage) "/>
                 </div>
                 <div class="cards-content">
                   <span class="cards-title text-center">Masaje Piedras Calientes</span>
@@ -335,7 +295,7 @@
       
               <div class="cards swiper-slide 7">
                 <div class="cards-image">
-                  <img src="images/servicios-7-limpieza-facial.png" alt="Rostro de hombre barbudo aplicandole máscara facial para limpieza facial profunda"/>
+                  <img src="images/servicios-7-limpieza-facial.webp" alt="Rostro de hombre barbudo aplicandole máscara facial para limpieza facial profunda"/>
                 </div>
                 <div class="cards-content">
                   <span class="cards-title">Limpieza Facial Profunda</span>
@@ -348,7 +308,7 @@
       
               <div class="cards swiper-slide 8">
                 <div class="cards-image">
-                  <img src="images/servicios-8-drenaje-linfatico-manual.png" alt="Pierna de mujer recibiendo un masaje de drenaje linfático manual"/>
+                  <img src="images/servicios-8-drenaje-linfatico-manual.webp" alt="Pierna de mujer recibiendo un masaje de drenaje linfático manual"/>
                 </div>
                 <div class="cards-content">
                   <span class="cards-title">Drenaje Linfático Manual</span>
@@ -360,7 +320,7 @@
       
               <div class="cards swiper-slide 9">
                 <div class="cards-image">
-                  <img src="images/servicios-9-terapia-led.png" alt="Rostro de mujer con luces en el rostro de la terapia led facial"/>
+                  <img src="images/servicios-9-terapia-led.webp" alt="Rostro de mujer con luces en el rostro de la terapia led facial"/>
                 </div>
                 <div class="cards-content">
                   <span class="cards-title">Terapia LED Facial</span>
@@ -371,7 +331,7 @@
       
               <div class="cards swiper-slide 10">
                 <div class="cards-image">
-                  <img src="images/servicios-10-masaje-descontracturante.png" alt="Hombre de espaldas con dolor en zona lumbar y cervical para masaje descontracturante"/>
+                  <img src="images/servicios-10-masaje-descontracturante.webp" alt="Hombre de espaldas con dolor en zona lumbar y cervical para masaje descontracturante"/>
                 </div>
                 <div class="cards-content">
                   <span class="cards-title">Masaje Terapéutico</span>
@@ -382,7 +342,7 @@
       
               <div class="cards swiper-slide 10">
                 <div class="cards-image">
-                  <img src="images/servicios-dermaplining-12-andrea-rios.png" alt="Rostro de mujer recibiendo una exfoliacion con bisturí - dermaplaning"/>
+                  <img src="images/servicios-dermaplining-12-andrea-rios.webp" alt="Rostro de mujer recibiendo una exfoliacion con bisturí - dermaplaning"/>
                 </div>
                 <div class="cards-content">
                   <span class="cards-title">Dermaplaning</span>
@@ -393,7 +353,7 @@
       
               <div class="cards swiper-slide 11">
                 <div class="cards-image">
-                  <img src="images/servicios-12-radiofrecuencia-corporal.png" alt="Piernas de mujer para recibir tratamiento de radiofrecuencia corporal"/>
+                  <img src="images/servicios-12-radiofrecuencia-corporal.webp" alt="Piernas de mujer para recibir tratamiento de radiofrecuencia corporal"/>
                 </div>
                 <div class="cards-content">
                   <span class="cards-title">Radiofrecuencia Corporal</span>
@@ -441,15 +401,16 @@
             <div class="carousel-inner">
       
               <div class="carousel-item active calificaciones">
-                <h5>Calificaciones en Google</h5>
+                <h5>CALIFICACIONES EN GOOGLE</h5>
                 <br>
                 <h4>Claudia Bergero</h4>
                 <p>⭐⭐⭐⭐⭐</p>
-                <p>Excellent service from very friendly people!<br /> Totally recommendable!</p>
+                <p>Excellent service from very friendly 
+                  <br>people! Totally recommendable!</p>
               </div>
       
               <div class="carousel-item calificaciones">
-                <h5>Calificaciones en Google</h5>
+                <h5>CALIFICACIONES EN GOOGLE</h5>
                 <br>
                 <h4>Omar Ifran</h4>
                 <p>⭐⭐⭐⭐⭐</p>
@@ -457,7 +418,7 @@
               </div>
       
               <div class="carousel-item calificaciones">
-                <h5>Calificaciones en Google</h5>
+                <h5>CALIFICACIONES EN GOOGLE</h5>
                 <br>
                 <h4>Carolina Valencia</h4>
                 <p>⭐⭐⭐⭐⭐</p>
@@ -465,15 +426,7 @@
               </div>
       
               <div class="carousel-item calificaciones">
-                <h5>Calificaciones en Google</h5>
-                <br>
-                <h4>Juan Montenegro</h4>
-                <p>⭐⭐⭐⭐⭐</p>
-                <p>Excelente servicio,<br />muy personalizado</p>
-              </div>
-      
-              <div class="carousel-item calificaciones">
-                <h5>Calificaciones en Google</h5>
+                <h5>CALIFICACIONES EN GOOGLE</h5>
                 <br>
                 <h4>Monica Flavia LENA</h4>
                 <p>⭐⭐⭐⭐⭐</p>
@@ -481,26 +434,25 @@
               </div>
       
               <div class="carousel-item calificaciones">
-                <h5>Calificaciones en Google</h5>
+                <h5>CALIFICACIONES EN GOOGLE</h5>
                 <br>
                 <h4>Nicolas Bergero</h4>
                 <p>⭐⭐⭐⭐⭐</p>
-                <p>Muy buen servicio. Personal profesional y<br />Buen ambiente y buenos precios. Recomendable!</p>
+                <p>Muy buen servicio. Personal profesional. <br>Buen ambiente y buenos precios.
+                   Recomendable!</p>
               </div>
       
               <div class="carousel-item calificaciones">
-                <h5>Calificaciones en Google</h5>
+                <h5>CALIFICACIONES EN GOOGLE</h5>
                 <br>
                 <h4>Sol Gonzalez</h4>
                 <p>⭐⭐⭐⭐⭐</p>
-                <p>Profesional en la atención! Andrea Ríos se dedica desde el 2003 a
-                  los masajes, y se nota en la calidad del servicio.
-                  <br />La reflexología de pies es lo mejor! El ambiente es muy
-                  agradable y limpio. Todo descartable!</p>
+                <p>Profesional en la atención! La reflexología de pies es lo mejor! 
+                  <br> El ambiente es muy agradable y limpio. Todo descartable!</p>
               </div>
       
               <div class="carousel-item calificaciones">
-                <h5>Calificaciones en Google</h5>
+                <h5>CALIFICACIONES EN GOOGLE</h5>
                 <br>
                 <h4>Carlos Sayago</h4>
                 <p>⭐⭐⭐⭐⭐</p>
@@ -508,7 +460,7 @@
               </div>
       
               <div class="carousel-item calificaciones">
-                <h5>Calificaciones en Google</h5>
+                <h5>CALIFICACIONES EN GOOGLE</h5>
                 <br>
                 <h4>Norma Beatriz Reynaga</h4>
                 <p>⭐⭐⭐⭐⭐</p>
@@ -516,7 +468,7 @@
               </div>
       
               <div class="carousel-item calificaciones">
-                <h5>Calificaciones en Google</h5>
+                <h5>CALIFICACIONES EN GOOGLE</h5>
                 <br>
                 <h4>Pablo Eugenio Fenoglio</h4>
                 <p>⭐⭐⭐⭐</p>
@@ -524,7 +476,7 @@
               </div>
       
               <div class="carousel-item calificaciones">
-                <h5>Calificaciones en Google</h5>
+                <h5>CALIFICACIONES EN GOOGLE</h5>
                 <br>
                 <h4>Dali Herrero</h4>
                 <p>⭐⭐⭐⭐⭐</p>
@@ -532,11 +484,19 @@
               </div>
       
               <div class="carousel-item calificaciones">
-                <h5>Calificaciones en Google</h5>
+                <h5>CALIFICACIONES EN GOOGLE</h5>
                 <br>
                 <h4>Facundo Burgos</h4>
                 <p>⭐⭐⭐⭐</p>
                 <p>Calificación otorgada</p>
+              </div>
+
+              <div class="carousel-item calificaciones">
+                <h5>CALIFICACIONES EN GOOGLE</h5>
+                <br>
+                <h4>Juan Montenegro</h4>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>Excelente servicio,<br />muy personalizado</p>
               </div>
       
             </div>
@@ -555,15 +515,108 @@
       
         </section>
         <!-- FIN div CALIFICACIONES -->
+
+        <!-- INICIO TODOS LOS SERVICIOS -->
+        <section id="servicios-todos">
+          <div class="container">
+            <br>
+            <h5 class="sub-title-servicios-todos text-center">CONOCÉ TODOS LOS SERVICIOS</h5>
+            <div class="servicios-list-todos">
+      
+              <div class="servicios-todoss">
+                <img src="../images/andrea-rios-masoterapia.webp"
+                  alt="hombre de espaldas con las manos en su cintura indicando dolor lumbar"/>
+                <div class="layer">
+                  <h3>MASOTERAPIA</h3>
+                  <ul>
+                    <li>Masajes Terapéuticos</li>
+                    <li>Masajes Post-operatorios</li>
+                    <li>Masajes Antiestrés</li>
+                    <li>Masajes Deportivos</li>
+                    <li>Masajes c/piedras calientes</li>
+                    <li>Drenajes Linfáticos</li>
+                    <li>Reflexología</li>
+                  </ul>
+                  <br>
+                  <br>           
+                </div>
+              </div>
+      
+              <div class="servicios-todoss">
+                <img src="../images/andrea-rios-estetica-facial.webp"
+                  alt="Mujer jóven acostada boca arriba recibiendo un tratamiento facial con pincel en el rostro"/>
+                <div class="layer">
+                  <h3>FACIALES</h3>
+                   <ul>
+                    <li>BB Glow</li>
+                    <li>Dermaplaning</li>
+                    <li>Limpieza Facial</li>
+                    <li>NanoBotox</li>
+                    <li>Peeling's</li>
+                    <li>Radiofrecuencia</li>
+                    <li>Terapia Led</li>
+                    <li>Tratamiento antiaging</li>
+                  </ul>
+                  <br>
+                  <br> 
+                </div>
+              </div>
+      
+              <div class="servicios-todoss">
+                <img src="../images/andrea-rios-estetica-corporal.webp"
+                  alt="Mujer joven, sentada en el suelo con piernas y brazos cruzadas"/>
+                <div class="layer">
+                  <h3>CORPORALES</h3>
+                  <ul>
+                    <li>Eliminación de Tatuajes</li>
+                    <li>Depilación Definitiva</li>
+                    <li>Lipolaser NO invasivo</li>
+                    <li>Radiofrecuencia Corporal</li>
+                    <li>Tratamientos Reductores</li>
+                    <li>Ultracavitación</li>
+                    <li>Cupping | Ventosaterapia</li>
+                    <li>Reiki</li>
+                  </ul>
+                  <br>
+                  <br>              
+           
+                </div>
+              </div>     
+      
+            </div>
+          </div>
+        </section>
+        <!-- FIN TODOS LOS SERVICIOS -->
+
+        <!-- INICIO DEPILACION HERO MEDIO FIJO -->
+        <section id="banner-depilacion-home" class="scroll_section">
+          <div class="container-fluid">
+            <div class="row depilacion-hero-fijo-2 align-items-center">
+      
+              <!--Esta columna ocupará 6 lugares -->
+              <article class="col-12 col-lg-4 col-md-6 offset-lg-3 texto-depilacion-hero-fijo">
+                <h4>DEPILACIÓN
+                <br>DEFINTIVA
+                <br>LÁSER</h4>
+                <br>
+                <p>ELIMINÁ el VELLO
+                <br>SIN DOLOR!</p>
+                <br>
+                <a class="btn btn-primary btn-lg rounded-5" href="/depilacionDefinitiva.html" role="button">CONOCÉ MÁS!</a>                               
+              </article>
+            </div>
+          </div>
+        </section>
+        <!-- FIN DEPILACION HERO MEDIO FIJO --> 
       
         <!-- INICIO CARD RUTINA FACIAL -->
         <div class="container">
           <section id="home-rutina-facial" class="row align-items-md-center min-vh-50 py-5">
-            <h5 class="text-center pb-5"><i>Paso a paso los Tip's de una RUTINA FACIAL DIARIA.</i></h5>
+            <h5 class="text-center pb-2"><i>Tip's de una RUTINA FACIAL DIARIA.</i></h5>
       
             <article class="col-12 col-md-6 col-lg-3 d-flex py-3">
               <div class="card mx-auto card-rutina" style="width: 16rem;">
-                <img src="/images/limpieza-facial-diaria-andrea-rios-1.png" 
+                <img src="/images/limpieza-facial-diaria-andrea-rios-1.webp" 
                 class="card-img-top bg--second-color card-rutina-imagen" alt="Dibujo de rostro de mujer haciendose una limpieza facial."/>
                 <div class="card-body">
                   <h5 class="card-title text-center">LIMPIEZA FACIAL</h5>
@@ -574,7 +627,7 @@
       
             <article class="col-12 col-md-6 col-lg-3 d-flex py-3">
               <div class="card mx-auto card-rutina" style="width: 16rem;">
-                <img src="/images/limpieza-facial-diaria-andrea-rios-2.png"
+                <img src="/images/limpieza-facial-diaria-andrea-rios-2.webp"
                   class="card-img-top bg--second-color card-rutina-imagen" alt="Dibujo de rostro de mujer con tónico facial"/>
                 <div class="card-body">
                   <h5 class="card-title text-center">TÓNICO FACIAL</h5>
@@ -585,7 +638,7 @@
       
             <article class="col-12 col-md-6 col-lg-3 d-flex py-3">
               <div class="card mx-auto card-rutina" style="width: 16rem;">
-                <img src="/images/limpieza-facial-diaria-andrea-rios-3.png"
+                <img src="/images/limpieza-facial-diaria-andrea-rios-3.webp"
                   class="card-img-top bg--second-color card-rutina-imagen" alt="Dibujo de rostro de mujer conlocandose crema hidratante"/>
                 <div class="card-body">
                   <h5 class="card-title text-center">HIDRATACIÓN</h5>
@@ -596,7 +649,7 @@
       
             <article class="col-12 col-md-6 col-lg-3 d-flex py-3">
               <div class="card mx-auto card-rutina" style="width: 16rem;">
-                <img src="/images/limpieza-facial-diaria-andrea-rios-4.png"
+                <img src="/images/limpieza-facial-diaria-andrea-rios-4.webp"
                   class="card-img-top bg--second-color card-rutina-imagen" alt="Dibujo de rostro de mujer colocandose protector solar"/>
                 <div class="card-body">
                   <h5 class="card-title text-center">PROTECTOR</h5>
@@ -638,18 +691,68 @@
       
       </main>   
 
-      <footer class="bg-dark p-3">
-      <div class="container text-center ">
-        <nav class="d-flex justify-content-around">
-          <a href="https://www.facebook.com/AndreaRios.Masoterapeuta/" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook fs-3"></i></a> <!--f3 es font size tamaño 3.-->
-          <a href="https://www.instagram.com/andrearios.masoterapeuta/" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram fs-3"></i></a>
-          <a href="https://api.whatsapp.com/send?phone=543876664176" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp fs-3"></i></a> 
-        </nav>
-        <br>
-        
-        <small class="text-white">&COPY; Copyright 2024  -  ANDREA RIOS MASOTERAPIA + ESTÉTICA  -  Rosario de la Frontera (Salta - Argentina)</small>
-      </div>
+      <!--  INICIO FOOTER 1 -->
+      <footer id="footer-1" class="container">
+        <div class="col">
+          <h4>CONTACTO</h4>
+          <h5><strong>3876 664176</strong></h5>
+          <p>Lunes a Sab. 9 a 21 hs</p>
+          <p>Rosario de la Frontera (Salta)</p>
+          <a Href="/contacto.html">Contacto</a>
+          <a href="/sobreAndrea.html">Sobre Andrea</a>
+
+          <div class="seguinos">
+            <div class="icon">
+              <h5><a href="https://www.facebook.com/AndreaRios.Masoterapeuta/" target="_blank" 
+              rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/andrearios.masoterapeuta/" target="_blank" 
+              rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+              <a href="https://api.whatsapp.com/send?phone=543876664176" target="_blank" 
+              rel="noopener noreferrer"><i class="bi bi-whatsapp"></i></a> 
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <h4>FACIALES</h4>
+            <a Href="/bbglow.html">BB Glow</a>
+            <a href="/dermaplaning.html">Dermaplaning</a>
+            <a href="/limpiezaFacial.html">Limpieza facial</a>
+            <a href="/nanobotox.html">NanoBotox</a>
+            <a href="/peeling.html">Peeling</a>
+            <a href="/radiofrecuenciaFacial.html">Radiofrecuencia</a>
+            <a href="/terapiaLed.html">Terapia Led</a>
+            <a href="/tratamientoAntiaging.html">Tratamiento antiaging</a>
+        </div>
+        <div class="col">
+          <h4>CORPORALES</h4>
+          <a href="/tattooRemoval.html">Tattoo Removal</a>
+          <a href="/ultracavitacion.html">Ultracavitación</a>
+          <a href="/depilacionDefinitiva.html">Depilación Defintiva</a>
+          <a href="/lipolaserNoInvasivo.html">Lipolaser NO invasivo</a>
+          <a href="/radiofrecuenciaCorporal.html">Radiofrecuencia corporal</a>
+        </div>
+        <div class="col install">
+          <h4>MASOTERAPIA</h4>
+          <a href="/drenajeLinfatico.html">Drenajes Linfáticos</a>
+          <a href="/masajeAntiEstres.html">Masajes Antiestrés</a>      
+          <a href="/masajeTerapeutico.html">Masajes Terapéuticos</a>
+          <a href="/reflexologia.html">Reflexología</a>
+          <br>
+          <h4>TERAPIAS</h4>
+          <a href="/reiki.html">Reiki</a>
+          <a href="/cupping.html">Cupping</a>
+        </div>
       </footer>
+      <!--  FIN FOOTER 1 -->
+
+      <!--  INICIO FOOTER 2 -->
+      <section id="footer2" class="bg-dark p-1">
+        <div class="copyright">
+          <p><small class="text-white">&COPY; Copyright 2024 Todos los derechos reservados | ANDREA RIOS MASOTERAPIA + ESTÉTICA © </small></p>
+        </div>
+      </section>
+      <!--  FIN FOOTER 2 -->
   
       <!-- BOOTSTRAP JS -->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"> 

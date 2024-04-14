@@ -36,21 +36,6 @@
 
     </head>
 
-    <!--Aclaraciones de comandos de Bootstrap. En bootstrap colocamos las clases:
-    - "fixed-top" para que la barra de navegación quede FIJA.
-    - "navbar-dark" y "bg-dark" para darle un color oscuro al backgroung de la barra de navegación. 
-    - "container-fluid" Todo el contenido va dentro CONTAINER con la clse fluid, que abarque todo
-      el ancho del viewport y se modifique acorde a cada dispositivo y su resolución de pantalla.
-    - "text-center" para que el contenido esté centrado respecto a viewport.
-    - "col-lg-3" Es la cantidad de columnas en el tamaño lg de la grilla de bootstrap. 
-      Acá tendremos un elemento de 3 columnas de las 12 que hay diaponibles.
-    - "offset-lg-2" La columna estará desplazada 2 columnas hacia la derecha
-    - "align-items-center" alinea en el eje vertical los hijos del elemento de forma centrada.
-    -  "py-3" La propiedad "p" para la clase "padding". La propiedad "y" setea los lados (top y bottom). 
-      Y el tamaño (size) va de 0 a 5 más "auto". Acá definimos un padding en top y bottom de 3.
-    - "data-bs-toggle" le indica a Bootstrap que deberá abrir un modal (ventana emergente)
-    - "data-bs-target" define el elemento que contiene al modal. --> 
-
     <body>
       <!-- INICIO NAVBAR -->
       <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
@@ -122,18 +107,18 @@
       <!-- INICIO MAIN RADIOFRECUENCIA FACIAL -->
       <main class="pt-0 ">
         <!-- INICIO HERO RADIOFRECUENCIA FACIAL -->
-        <section id="raiofrecuenciafacial" class="scroll_section">
+        <section id="radiofrecuenciafacial" class="scroll_section">
           <div class="container-fluid" id="radiofrecuencia-hero-image">
             <div class="row align-items-center radiofrecuencia-facial-hero">
               <div class="col-lg-4 offset-lg-3">
                 <h4>RADIOFRECUENCIA <br> 
                 FACIAL</h4> 
-                <p> Un método seguro, sencillo
-                <br> y no invasivo para tratar
-                <br> flacidez y arrugas del rostro.
+                <p>Método no invasivo
+                <br>para tratar fracidez
+                <br>y arrugas faciales.
                 </p>
                 <div class="text-start">
-                  <a class="btn btn-primary btn-lg rounded-5" href="/contacto.html">AGENDÁ TU SESIÓN HOY!</a>
+                  <a class="btn btn-primary btn-lg rounded-5" href="/contacto.html">AGENDÁ TU SESIÓN!</a>
                 </div>
               </div>
             </div>
@@ -141,46 +126,41 @@
         </section>
         <!-- FIN HERO RADIOFRECUENCIA FACIAL -->
       
-        <!-- INICIO CONTAINER RADIOFRECUENCIA FACIAL -->
+        <!-- INICIO CONTAINER 1 RADIOFRECUENCIA FACIAL -->
         <div class="container mb-4 pt-4">
-          <section class="row">
-            <!-- 1 Col ocupará 6 lugares del lado derecho -->
+          <section id="radio-facial-container-1" class="row">
+            
             <article class="col-12 col-lg-6 order-lg-1 mt-4">
               <h5 class="text-center">PROCEDIMIENTO</h5>
-              <p> La radiofrecuencia facial es un sistema que estimula la producción de colágeno y elastina propios mediante el incremento la temperatura de la dermis. 
-              <br>
-              <br> Este aumento de colágeno brinda tensión al tejido y la zona tratada, procurando disminuir la flacidez y otorgando un rejuveneciendo del área.
-              <br>
-              <br> Este tratamiento es una práctica facial segura para mujeres y hombres.
-              </p>
+              <p> La radiofrecuencia facial es un sistema que estimula la producción de colágeno y elastina propios mediante el incremento de la temperatura de la dermis.
+              <br> Este aumento de colágeno brinda tensión al tejido y la zona tratada, procurando disminuir la flacidez y otorgando un rejuvenecimiento del área. Este tratamiento es seguro para mujeres y hombres.</p>
             </article>
       
-            <!--Esta columna ocupará 6 lugares -->
             <article class="col-12 col-lg-6 mt-4">
               <h5 class="text-center">BENEFICIOS</h5> 
               <P> 
                 <ul>
-                  <i class="bi bi-check-circle">  Estimula la producción de colágeno propia.</i><br>
-                  <i class="bi bi-check-circle">  Otorgar mayor elasticidad de la piel.</i><br>
+                  <i class="bi bi-check-circle">  Estimula la producción de colágeno.</i><br>
+                  <i class="bi bi-check-circle">  Otorga mayor elasticidad a la piel.</i><br>
                   <i class="bi bi-check-circle">  Difumina arrugas, devolviéndole al rostro la juventud.</i><br>
                   <i class="bi bi-check-circle">  Activa la circulación sanguínea.</i><br>
-                  <i class="bi bi-check-circle">  Devuelve toda la luminosidad a la piel.</i><br>
+                  <i class="bi bi-check-circle">  Devuelve toda la luminosidad.</i><br>
                   <i class="bi bi-check-circle">  Reduce visiblemente la flacidez.</i><br>
                 </ul>
               </P>
             </article>
           </section>
         </div>
-        <!-- FIN CONTAINER RADIOFRECUENCIA FACIAL -->
+        <!-- FIN CONTAINER 1 RADIOFRECUENCIA FACIAL -->
       
-          <!-- INICIO RADIOFRECUENCIA BANNER CON CIRCULOS FIJO -->
+          <!-- INICIO RADIOFRECUENCIA BANNER CIRCULOS FIJO -->
         <section id="radioFrecuenciaFacial" class="radioFrecuenciaFacial">
           <div class="container">
       
             <div class="img-radiofrecuencia-facial">
               <div class="row">
-                <img class="img-fluid" src="/images/radiofrecuencia-facial-andrea-rios-circulos.png"
-                width="100%" alt="tres imágenes de rostro de mujeres con el cabezador de radiofrecuencia facial en el rostro"/>
+                <img class="img-fluid" src="/images/radiofrecuencia-facial-andrea-rios-circulos.webp"
+                width="100%" alt="Tres imágenes de rostro de mujeres con el cabezador de radiofrecuencia facial en el rostro"/>
               </div>
             </div>
           </div>
@@ -196,13 +176,14 @@
                 <i class="fa-solid fa-list-check"></i>
                 <h3 class="text-center">APLICACIONES</h3>
                 <ul>
-                  <i class="bi bi-check-circle"> Entre 8 y 12 sesiones por zona.</i><br />
+                  <i class="bi bi-check-circle"> Entre 8 y 12 sesiones.</i><br />
                   <i class="bi bi-check-circle"> Entre 2 y 3 veces por semana. (*)</i><br />
                   <i class="bi bi-check-circle"> Apto para todo tono de piel.</i><br />
-                  <i class="bi bi-check-circle"> Puede aplicarse dutrante todo el año.</i><br />
-                  <i class="bi bi-check-circle"> Apto para hombres y mujeres.</i><br />            
+                  <i class="bi bi-check-circle"> Puede aplicarse todo el año.</i><br />
+                  <i class="bi bi-check-circle"> Para hombres y mujeres.</i><br />            
                   <br>
-                  (*)Acorde al criterio profesional y la zona a tratar.<br />
+                  <br>
+                  <i>(*) Acorde al criterio profesional y la zona a tratar.</i><br />
                 </ul>
               </div>
       
@@ -210,13 +191,14 @@
                 <i class="fa-solid fa-ban"></i>
                 <h3 class="text-center">CONTRAINDICACIONES</h3>
                 <ul>
-                  <i class="bi bi-check-circle">  Personas con alteraciones de la piel.</i><br />
+                  <i> Personas con:</i><br />
+                  <i class="bi bi-check-circle"> Alteraciones de la piel.</i><br />
                   <i class="bi bi-check-circle">  Enfermedades del sistema circulatorio.</i><br/>
                   <i class="bi bi-check-circle">  Zonas con implantes o prótesis metálicas.</i><br/>
-                  <i class="bi bi-check-circle">  Personas con marcapasos / tumores / fracturas.</i><br/>
+                  <i class="bi bi-check-circle"> Marcapasos / tumores / fracturas.</i><br/>
                   <i class="bi bi-check-circle">  Mujeres embarazadas / en período de lactancia.</i><br />
-                  <i class="bi bi-check-circle">  Personas con epilepsia o hemorragias.</i><br />
-                  <i class="bi bi-check-circle">  Personas con implantes de colágeno reciente.</i><br />
+                  <i class="bi bi-check-circle"> Epilepsia o hemorragias.</i><br />
+                  <i class="bi bi-check-circle"> Implantes de colágeno reciente.</i><br />
                 </ul>
               </div>
       
@@ -225,23 +207,75 @@
         </section>
          <!-- FIN TARJETAS RADIOFRECUENCIA -->
       
-        <div class="col-12 col-lg-6 offset-lg-3 pt-4 pb-4">
+        <div id="importante-radiofrecuencia" class="col-12 col-lg-6 offset-lg-3 pt-4 pb-4">
           <p><i> <strong>IMPORTANTE:</strong> Para saber cuál es el tratamiento adecuado para tu biotipo cutáneo, consultá a una Cosmetóloga, Cosmiatra o Dermatóloga.</i></p>
         </div>
       
       </main>
       <!-- FIN MAIN RADIOFRECUENCIA FACIAL -->
 
-      <footer class="bg-dark p-3">
-      <div class="container text-center ">
-        <nav class="d-flex justify-content-around">
-          <a href="https://www.facebook.com/AndreaRios.Masoterapeuta/" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook fs-3"></i></a> <!--f3 es font size tamaño 3.-->
-          <a href="https://www.instagram.com/andrearios.masoterapeuta/" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram fs-3"></i></a>
-          <a href="https://api.whatsapp.com/send?phone=543876664176" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp fs-3"></i></a> 
-        </nav>
-        <small class="text-white">&COPY; Copyright 2024  -  ANDREA RIOS MASOTERAPIA + ESTÉTICA  -  Rosario de la Frontera (Salta - Argentina)</small>
-      </div>
+      <!--  INICIO FOOTER 1 -->
+      <footer id="footer-1" class="container">
+        <div class="col">
+          <h4>CONTACTO</h4>
+          <h5><strong>3876 664176</strong></h5>
+          <p>Lunes a Sab. 9 a 21 hs</p>
+          <p>Rosario de la Frontera (Salta)</p>
+          <a Href="/contacto.html">Contacto</a>
+          <a href="/sobreAndrea.html">Sobre Andrea</a>
+
+          <div class="seguinos">
+            <div class="icon">
+              <h5><a href="https://www.facebook.com/AndreaRios.Masoterapeuta/" target="_blank" 
+              rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/andrearios.masoterapeuta/" target="_blank" 
+              rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+              <a href="https://api.whatsapp.com/send?phone=543876664176" target="_blank" 
+              rel="noopener noreferrer"><i class="bi bi-whatsapp"></i></a> 
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <h4>FACIALES</h4>
+            <a Href="/bbglow.html">BB Glow</a>
+            <a href="/dermaplaning.html">Dermaplaning</a>
+            <a href="/limpiezaFacial.html">Limpieza facial</a>
+            <a href="/nanobotox.html">NanoBotox</a>
+            <a href="/peeling.html">Peeling</a>
+            <a href="/radiofrecuenciaFacial.html">Radiofrecuencia</a>
+            <a href="/terapiaLed.html">Terapia Led</a>
+            <a href="/tratamientoAntiaging.html">Tratamiento antiaging</a>
+        </div>
+        <div class="col">
+          <h4>CORPORALES</h4>
+          <a href="/tattooRemoval.html">Tattoo Removal</a>
+          <a href="/ultracavitacion.html">Ultracavitación</a>
+          <a href="/depilacionDefinitiva.html">Depilación Defintiva</a>
+          <a href="/lipolaserNoInvasivo.html">Lipolaser NO invasivo</a>
+          <a href="/radiofrecuenciaCorporal.html">Radiofrecuencia corporal</a>
+        </div>
+        <div class="col install">
+          <h4>MASOTERAPIA</h4>
+          <a href="/drenajeLinfatico.html">Drenajes Linfáticos</a>
+          <a href="/masajeAntiEstres.html">Masajes Antiestrés</a>      
+          <a href="/masajeTerapeutico.html">Masajes Terapéuticos</a>
+          <a href="/reflexologia.html">Reflexología</a>
+          <br>
+          <h4>TERAPIAS</h4>
+          <a href="/reiki.html">Reiki</a>
+          <a href="/cupping.html">Cupping</a>
+        </div>
       </footer>
+      <!--  FIN FOOTER 1 -->
+
+      <!--  INICIO FOOTER 2 -->
+      <section id="footer2" class="bg-dark p-1">
+        <div class="copyright">
+          <p><small class="text-white">&COPY; Copyright 2024 Todos los derechos reservados | ANDREA RIOS MASOTERAPIA + ESTÉTICA © </small></p>
+        </div>
+      </section>
+      <!--  FIN FOOTER 2 -->
   
       <!-- BOOTSTRAP JS -->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"> 
