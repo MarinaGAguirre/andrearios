@@ -897,7 +897,7 @@ html {
   background-position: center;
 }
 
-/* ****** HOME FOOTER 1 ******  */
+/* ****** FOOTER 1 ******  */
 
 #footer-1 {
   background-color: var(--bg-gradient-gray-white);
@@ -965,14 +965,19 @@ footer .seguinos i {
   cursor: pointer;
 }
 
-footer .seguinos i:hover,
+footer .seguinos i:hover {
+  color: var(--fourth-color);
+  transition: all 0.5s ease-in-out;
+  font-size: 33px;
+}
 footer a:hover {
   color: var(--fourth-color);
-  transition: all 0.12s ease-out;
+  transition: all 0.5s ease-in-out;
+  font-size: 14px;
 }
 
 
-/* ****** HOME FOOTER 2 ******  */
+/* ****** FOOTER 2 ******  */
 #footer2 .copyright {
   background-color: var(--fourth-color);
   padding: 5px 20px 5px 20px;
@@ -982,6 +987,14 @@ footer a:hover {
   width: 100%;
   text-align: center;
   font-size: 13px;
+}
+
+#footer2 a {
+  text-decoration: none;
+}
+#footer2 a:hover {
+  font-size: 13px;
+  transition: all 0.5s ease-in-out;
 }
 
 /*  ********** LIPOPLASER **********  */
